@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/keywords.c,v 1.121 2002-07-18 17:14:19 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/keywords.c,v 1.122 2002-07-18 23:11:28 petere Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -142,7 +142,6 @@ static const ScanKeyword ScanKeywords[] = {
 	{"ilike", ILIKE},
 	{"immediate", IMMEDIATE},
 	{"immutable", IMMUTABLE},
-	{"implicit", IMPLICIT},
 	{"in", IN_P},
 	{"increment", INCREMENT},
 	{"index", INDEX},
