@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeNestloop.c,v 1.5 1997-09-08 02:22:48 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeNestloop.c,v 1.6 1997-09-08 20:55:46 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -86,7 +86,7 @@ ExecNestLoop(NestLoop * node, Plan * parent)
 	 */
 	econtext = nlstate->jstate.cs_ExprContext;
 
-	/* ----------------		* get the current outer tuple
+	/* ----------------		  * get the current outer tuple
 	 * ----------------
 	 */
 	outerTupleSlot = nlstate->jstate.cs_OuterTupleSlot;

@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/Attic/nbtscan.c,v 1.9 1997-09-08 02:20:52 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/Attic/nbtscan.c,v 1.10 1997-09-08 20:54:24 momjian Exp $
  *
  *
  * NOTES
@@ -36,7 +36,7 @@ typedef struct BTScanListData
 {
 	IndexScanDesc btsl_scan;
 	struct BTScanListData *btsl_next;
-}			BTScanListData;
+} BTScanListData;
 
 typedef BTScanListData *BTScanList;
 
