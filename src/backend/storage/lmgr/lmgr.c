@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/lmgr.c,v 1.24 1999-05-25 16:11:20 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/lmgr.c,v 1.25 1999-05-25 22:42:01 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -92,7 +92,7 @@ static int	LockPrios[] = {
 	7
 };
 
-LOCKMETHOD LockTableId = (LOCKMETHOD) NULL;
+LOCKMETHOD	LockTableId = (LOCKMETHOD) NULL;
 LOCKMETHOD	LongTermTableId = (LOCKMETHOD) NULL;
 
 /*
