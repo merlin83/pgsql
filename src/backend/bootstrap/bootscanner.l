@@ -8,10 +8,11 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/bootstrap/bootscanner.l,v 1.1.1.1 1996-07-09 06:21:14 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/bootstrap/bootscanner.l,v 1.2 1996-08-28 07:14:09 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
+#include "postgres.h"
 #include "bootstrap/bootstrap.h"
 #include "utils/portal.h" 
 #include "access/xact.h"
