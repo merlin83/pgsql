@@ -10,7 +10,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/utility.c,v 1.156 2002-05-21 22:18:08 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/utility.c,v 1.157 2002-06-18 17:27:58 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -630,10 +630,7 @@ ProcessUtility(Node *parsetree,
 		case T_CreatedbStmt:
 			{
 				CreatedbStmt *stmt = (CreatedbStmt *) parsetree;
-
-				createdb(stmt->dbname, stmt->dbowner,
-						 stmt->dbpath, stmt->dbtemplate,
-						 stmt->encoding);
+				createdb(stmt);
 			}
 			break;
 
