@@ -36,7 +36,7 @@
 # SUCH DAMAGE.
 #
 # $My2pg: my2pg.pl,v 1.24 2001/12/06 19:32:20 fonin Exp $
-# $Id: my2pg.pl,v 1.8 2002-04-24 01:42:29 momjian Exp $
+# $Id: my2pg.pl,v 1.9 2002-08-22 00:01:39 tgl Exp $
 
 # TODO:
 # + Handle SETs
@@ -47,8 +47,17 @@
 
 #
 # $Log: my2pg.pl,v $
-# Revision 1.8  2002-04-24 01:42:29  momjian
-# Update to my2pg 1.24.
+# Revision 1.9  2002-08-22 00:01:39  tgl
+# Add a bunch of pseudo-types to replace the behavior formerly associated
+# with OPAQUE, as per recent pghackers discussion.  I still want to do some
+# more work on the 'cstring' pseudo-type, but I'm going to commit the bulk
+# of the changes now before the tree starts shifting under me ...
+#
+# Revision 1.9  2002/08/22 00:01:39  tgl
+# Add a bunch of pseudo-types to replace the behavior formerly associated
+# with OPAQUE, as per recent pghackers discussion.  I still want to do some
+# more work on the 'cstring' pseudo-type, but I'm going to commit the bulk
+# of the changes now before the tree starts shifting under me ...
 #
 # Revision 1.8  2002/04/24 01:42:29  momjian
 # Update to my2pg 1.24.
@@ -196,7 +205,7 @@ $libtypename.='/libtypes.so';
 # push header to libtypes.c
 open(LIBTYPES,">$libtypesource");
 print LIBTYPES "/******************************************************";
-print LIBTYPES "\n * My2Pg \$Revision: 1.8 $ \translated dump";
+print LIBTYPES "\n * My2Pg \$Revision: 1.9 $ \translated dump";
 print LIBTYPES "\n * User types definitions";
 print LIBTYPES "\n ******************************************************/";
 print LIBTYPES "\n\n#include <postgres.h>\n";
@@ -311,11 +320,11 @@ int2* $typename"."_in (char *str) {
 	print LIBTYPES "\n * Types for table ".uc($table_name);
 	print LIBTYPES "\n */\n";
 
-	$types.="\nCREATE FUNCTION $typename"."_in (opaque)
+	$types.="\nCREATE FUNCTION $typename"."_in (cstring)
 	RETURNS $typename
 	AS '$libtypename'
 	LANGUAGE 'c'
-	WITH (ISCACHABLE);\n";
+	WITH (ISSTRICT, ISCACHABLE);\n";
 
 # creating output function
 	my $func_out="
@@ -365,11 +374,11 @@ bool $typename"."_ge(int2* a, int2* b) {
     return (*a>=*b);
 }\n";
 
-	$types.="\nCREATE FUNCTION $typename"."_out (opaque)
-	RETURNS opaque
+	$types.="\nCREATE FUNCTION $typename"."_out ($typename)
+	RETURNS cstring
 	AS '$libtypename'
 	LANGUAGE 'c'
-	WITH (ISCACHABLE);\n";
+	WITH (ISSTRICT, ISCACHABLE);\n";
 
 	$types.="\nCREATE TYPE $typename (
 	internallength = 2,
@@ -512,7 +521,7 @@ $typesize* $typename"."_in (char *str) {
 	print LIBTYPES "\n * Types for table ".uc($table_name);
 	print LIBTYPES "\n */\n";
 
-	$types.="\nCREATE FUNCTION $typename"."_in (opaque)
+	$types.="\nCREATE FUNCTION $typename"."_in (cstring)
 	RETURNS $typename
 	AS '$libtypename'
 	LANGUAGE 'c';\n";
@@ -564,8 +573,8 @@ $typesize find_in_set($typesize *a, $typesize *b) {
 
 \n";
 
-	$types.="\nCREATE FUNCTION $typename"."_out (opaque)
-	RETURNS opaque
+	$types.="\nCREATE FUNCTION $typename"."_out ($typename)
+	RETURNS cstring
 	AS '$libtypename'
 	LANGUAGE 'c';\n";
 
@@ -728,7 +737,7 @@ close(LIBTYPES);
 
 open(MAKE,">Makefile");
 print MAKE "#
-# My2Pg \$Revision: 1.8 $ \translated dump
+# My2Pg \$Revision: 1.9 $ \translated dump
 # Makefile
 #
 
