@@ -4,16 +4,14 @@
 #    Makefile for access/transam
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/transam/Makefile,v 1.1 1996-10-27 09:46:48 bryanh Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/transam/Makefile,v 1.2 1996-11-03 09:07:03 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR = ../../..
 include ../../../Makefile.global
 
-INCLUDE_OPT = -I../.. \
-              -I../../port/$(PORTNAME) \
-              -I../../include \
+INCLUDE_OPT = -I../../port/$(PORTNAME) \
               -I../../../include
 
 CFLAGS+=$(INCLUDE_OPT)
