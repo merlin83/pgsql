@@ -16,7 +16,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/prep/prepjointree.c,v 1.11 2003-08-08 21:41:52 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/prep/prepjointree.c,v 1.12 2003-09-25 06:58:00 petere Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -337,7 +337,7 @@ pull_up_subqueries(Query *parse, Node *jtnode, bool below_outer_join)
 				 */
 				ereport(ERROR,
 						(errcode(ERRCODE_FEATURE_NOT_SUPPORTED),
-						 errmsg("UNION JOIN is not implemented yet")));
+						 errmsg("UNION JOIN is not implemented")));
 				break;
 			default:
 				elog(ERROR, "unrecognized join type: %d",
