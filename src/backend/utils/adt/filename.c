@@ -7,10 +7,13 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/Attic/filename.c,v 1.1.1.1 1996-07-09 06:22:04 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/Attic/filename.c,v 1.2 1996-08-27 07:32:32 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
+
+#include "config.h"
+
 #include <string.h>
 #include <stdio.h>
 #ifndef WIN32
