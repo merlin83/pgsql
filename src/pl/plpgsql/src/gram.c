@@ -65,7 +65,7 @@
  *			  procedural language
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/pl/plpgsql/src/Attic/gram.c,v 1.1 1998-10-28 17:07:17 momjian Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/pl/plpgsql/src/Attic/gram.c,v 1.1.2.1 1998-12-23 14:39:03 momjian Exp $
  *
  *    This software is copyrighted by Jan Wieck - Hamburg.
  *
