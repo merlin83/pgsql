@@ -12,7 +12,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/Attic/multi.c,v 1.13 1998-06-23 17:52:28 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/Attic/multi.c,v 1.14 1998-06-23 17:59:54 momjian Exp $
  *
  * NOTES:
  *	 (1) The lock.c module assumes that the caller here is doing
@@ -88,6 +88,13 @@ LockTableId
 InitMultiLevelLockm()
 {
 	int			tableId;
+
+	/* -----------------------
+	 * If we're already initialized just return the table id.
+	 * -----------------------
+	 */
+	if (MultiTableId)
+		return MultiTableId;
 
 	tableId = LockTabInit("LockTable", MultiConflicts, MultiPrios, 5);
 	MultiTableId = tableId;
