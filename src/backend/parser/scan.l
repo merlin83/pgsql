@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/scan.l,v 1.58 1999-10-08 05:03:13 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/scan.l,v 1.59 1999-10-09 01:32:38 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -169,7 +169,7 @@ param			\${integer}
 
 comment			("--"|"//").*
 
-space			[ \t\n\f]
+space			[ \t\n\r\f]
 other			.
 
 /* DO NOT PUT ANY COMMENTS IN THE FOLLOWING SECTION.
