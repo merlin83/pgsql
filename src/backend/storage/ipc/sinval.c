@@ -7,14 +7,13 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/ipc/sinval.c,v 1.5 1996-11-10 03:02:30 momjian Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/ipc/sinval.c,v 1.6 1997-01-08 08:32:04 bryanh Exp $
  *
  *-------------------------------------------------------------------------
  */
 /* #define INVALIDDEBUG	1 */
 
 #include <sys/types.h>
-#include <sys/ipc.h>
 
 #include "postgres.h"
 
