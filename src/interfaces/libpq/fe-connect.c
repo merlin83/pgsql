@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-connect.c,v 1.97 1999-05-25 16:15:11 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-connect.c,v 1.98 1999-06-17 15:16:04 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -138,9 +138,6 @@ static struct EnvironmentOptions
 	},
 	{
 		"PGGEQO", "geqo"
-	},
-	{
-		"PGQUERY_LIMIT", "query_limit"
 	},
 	{
 		NULL
