@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2000-2003, PostgreSQL Global Development Group
  *
- * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/mbprint.c,v 1.9 2003-08-04 23:59:40 tgl Exp $
+ * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/mbprint.c,v 1.10 2003-09-05 02:31:10 momjian Exp $
  */
 
 #include "postgres_fe.h"
@@ -335,7 +335,6 @@ mbvalidate(unsigned char *pwcs, int encoding)
 	else
 	{
 #ifdef WIN32
-
 		/*
 		 * translate characters to DOS console encoding, e.g. needed for
 		 * German umlauts
