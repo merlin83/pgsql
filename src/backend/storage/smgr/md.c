@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/smgr/md.c,v 1.35 1998-07-26 04:30:44 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/smgr/md.c,v 1.36 1998-08-11 18:28:15 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -565,8 +565,8 @@ mdblindwrt(char *dbstr,
 /* this is work arround only !!! */
 	{
 		char		dbpath[MAXPGPATH + 1];
-		Oid			owner,
-					id;
+		int4		owner;
+		Oid			id;
 		char	   *tmpPath;
 #ifdef MULTIBYTE
 		int	   tmpEncoding;
@@ -610,8 +610,8 @@ mdblindwrt(char *dbstr,
 /* this is work arround only !!! */
 	{
 		char		dbpath[MAXPGPATH + 1];
-		Oid			owner,
-					id;
+		int4		owner;
+		Oid			id;
 		char	   *tmpPath;
 
 #ifdef MULTIBYTE
