@@ -8,11 +8,12 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/util/plancat.c,v 1.30 1999-05-25 16:09:59 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/util/plancat.c,v 1.31 1999-07-07 16:09:33 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include <stdio.h>
+#include <math.h>
 #include "postgres.h"
 
 #include "access/heapam.h"
