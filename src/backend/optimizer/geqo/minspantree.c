@@ -7,12 +7,14 @@
 *
 *
 * IDENTIFICATION
-*	 $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/geqo/Attic/minspantree.c,v 1.14 1999-07-16 04:59:13 momjian Exp $
+*	 $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/geqo/Attic/minspantree.c,v 1.15 1999-09-21 20:58:08 momjian Exp $
 *
 *-------------------------------------------------------------------------
 */
 
+#ifdef HAVE_VALUES_H
 #include <values.h>
+#endif
 
 #include "postgres.h"
 
