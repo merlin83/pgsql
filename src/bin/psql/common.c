@@ -3,7 +3,7 @@
  *
  * Copyright 2000 by PostgreSQL Global Development Group
  *
- * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/common.c,v 1.60 2003-03-20 06:43:35 momjian Exp $
+ * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/common.c,v 1.61 2003-03-20 15:39:52 momjian Exp $
  */
 #include "postgres_fe.h"
 #include "common.h"
@@ -621,7 +621,7 @@ char parse_char(char **buf)
   long l;
 
   l = strtol(*buf, buf, 0);
-  (*buf)--;
+  --*buf;
   return (char)l;
 }
 
