@@ -7,12 +7,12 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq++/examples/Attic/testlo.cc,v 1.3 1997-02-13 10:01:05 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq++/examples/Attic/testlo.cc,v 1.4 1999-05-23 01:04:07 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include <iostream.h>
-#include <libpq++.h>
+#include <libpq++.H>
 #include <stdlib.h>
 
 int main(int argc, char **argv)
