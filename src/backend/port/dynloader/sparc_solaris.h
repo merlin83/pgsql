@@ -1,25 +1,29 @@
 /*-------------------------------------------------------------------------
  *
  * port-protos.h--
- *	  port-specific prototypes for SCO 3.2v5.2
+ *	  port-specific prototypes for SunOS 4
  *
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: port-protos.h,v 1.2 1997-09-07 04:46:41 momjian Exp $
+ * $Id: sparc_solaris.h,v 1.1 1997-12-20 03:35:55 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
 #ifndef PORT_PROTOS_H
 #define PORT_PROTOS_H
 
+#include <netinet/in.h>			/* For struct in_addr */
+#include <arpa/inet.h>
+
 #include <dlfcn.h>
+
 #include "fmgr.h"				/* for func_ptr */
 #include "utils/dynamic_loader.h"
 
 /* dynloader.c */
 /*
- * Dynamic Loader on SCO 3.2v5.0.2
+ * Dynamic Loader on SunOS 4.
  *
  * this dynamic loader uses the system dynamic loading interface for shared
  * libraries (ie. dlopen/dlsym/dlclose). The user must specify a shared
@@ -30,7 +34,5 @@
 #define pg_dlsym		dlsym
 #define pg_dlclose		dlclose
 #define pg_dlerror		dlerror
-
-/* port.c */
 
 #endif							/* PORT_PROTOS_H */
