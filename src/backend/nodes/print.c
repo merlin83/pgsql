@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/print.c,v 1.12 1997-12-18 12:53:56 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/print.c,v 1.13 1998-01-07 15:32:29 momjian Exp $
  *
  * HISTORY
  *	  AUTHOR			DATE			MAJOR EVENT
@@ -164,7 +164,7 @@ print_expr(Node *expr, List *rtable)
 {
 	if (expr == NULL)
 	{
-		printf("nil");
+		printf("<>");
 		return;
 	}
 
