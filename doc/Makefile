@@ -8,11 +8,11 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/Makefile,v 1.7 1998-04-17 03:58:11 thomas Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/Makefile,v 1.8 1998-04-27 14:41:50 scrappy Exp $
 #
 #----------------------------------------------------------------------------
 
-PGDOCS= $(POSTGRESDIR)/doc
+PGDOCS= /home/projects/pgsql/ftp/www/html/docs2
 SRCDIR= ../src
 
 TAR= tar
