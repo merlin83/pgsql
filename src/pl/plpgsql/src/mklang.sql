@@ -1,7 +1,7 @@
 --
 -- PL/pgSQL language declaration
 --
--- $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/contrib/plpgsql/src/Attic/mklang.sql,v 1.1 1998-08-22 12:38:31 momjian Exp $
+-- $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/pl/plpgsql/src/Attic/mklang.sql,v 1.1 1998-08-24 19:14:48 momjian Exp $
 --
 
 create function plpgsql_call_handler() returns opaque
