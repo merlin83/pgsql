@@ -1,4 +1,4 @@
-*-------------------------------------------------------------------------
+/*-------------------------------------------------------------------------
  *
  * psql.c--
  *    an interactive front-end to postgres95
@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/Attic/psql.c,v 1.25 1996-11-08 06:01:33 momjian Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/Attic/psql.c,v 1.26 1996-11-08 20:46:19 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
