@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/schemacmds.c,v 1.7 2002-12-05 04:04:42 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/schemacmds.c,v 1.8 2003-04-29 22:13:08 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -124,7 +124,7 @@ CreateSchemaCommand(CreateSchemaStmt *stmt)
 		List	   *querytree_list,
 				   *querytree_item;
 
-		querytree_list = parse_analyze(parsetree, NULL);
+		querytree_list = parse_analyze(parsetree, NULL, 0);
 
 		foreach(querytree_item, querytree_list)
 		{
