@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/listen.l,v 1.1 1996-08-18 22:14:25 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/listen.l,v 1.1.1.1 1996-08-18 22:14:25 scrappy Exp $
 .TH "LISTEN" SQL 03/12/94 Postgres95 Postgres95
 .SH NAME
 listen \(em listen for notification on a relation

@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/close.l,v 1.1 1996-08-18 22:14:20 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/close.l,v 1.1.1.1 1996-08-18 22:14:20 scrappy Exp $
 .TH CLOSE SQL 11/05/95 Postgres95 Postgres95
 .SH NAME
 close \(em close a cursor

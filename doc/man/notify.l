@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/notify.l,v 1.1 1996-08-18 22:14:26 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/notify.l,v 1.1.1.1 1996-08-18 22:14:26 scrappy Exp $
 .TH "NOTIFY" SQL 11/05/95 Postgres95 Postgres95
 .SH NAME
 notify \(em signal all frontends and backends listening on a class

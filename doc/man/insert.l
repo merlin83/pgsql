@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/insert.l,v 1.1 1996-08-18 22:14:24 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/insert.l,v 1.1.1.1 1996-08-18 22:14:24 scrappy Exp $
 .TH INSERT SQL 11/05/95 Postgres95 Postgres95
 .SH NAME
 insert \(em insert tuples to a relation

@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/abort.l,v 1.1 1996-08-18 22:14:19 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/abort.l,v 1.1.1.1 1996-08-18 22:14:19 scrappy Exp $
 .TH ABORT SQL 01/23/93 Postgres95 Postgres95
 .\" XXX This .XA has to go after the .TH so that the index page number goes
 .\"	in the right place...

@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/select.l,v 1.1 1996-08-18 22:14:27 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/select.l,v 1.1.1.1 1996-08-18 22:14:27 scrappy Exp $
 .TH SELECT SQL 11/05/95 Postgres95 Postgres95
 .SH NAME
 select \(em retrieve instances from a class

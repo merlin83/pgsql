@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/alter_table.l,v 1.1 1996-08-18 22:14:19 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/alter_table.l,v 1.1.1.1 1996-08-18 22:14:19 scrappy Exp $
 .TH "ALTER TABLE" SQL 11/5/95 Postgres95 Postgres95
 .SH NAME
 alter table \(em add attributes to a class

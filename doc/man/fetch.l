@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/fetch.l,v 1.1 1996-08-18 22:14:24 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/fetch.l,v 1.1.1.1 1996-08-18 22:14:24 scrappy Exp $
 .TH FETCH SQL 01/23/93 Postgres95 Postgres95
 .SH NAME
 fetch \(em fetch instance(s) from a cursor

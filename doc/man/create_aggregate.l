@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/create_aggregate.l,v 1.1 1996-08-18 22:14:21 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/create_aggregate.l,v 1.1.1.1 1996-08-18 22:14:21 scrappy Exp $
 .TH "CREATE AGGREGATE" SQL 11/05/95 Postgres95 Postgres95
 .SH NAME
 create aggregate \(em define a new aggregate

@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/commit.l,v 1.1 1996-08-18 22:14:20 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/commit.l,v 1.1.1.1 1996-08-18 22:14:20 scrappy Exp $
 .TH COMMIT SQL 01/23/93 Postgres95 Postgres95
 .SH NAME
 commit \(em commit the current transaction 

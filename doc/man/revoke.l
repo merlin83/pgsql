@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/revoke.l,v 1.1 1996-08-18 22:14:27 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/revoke.l,v 1.1.1.1 1996-08-18 22:14:27 scrappy Exp $
 .TH REVOKE SQL 11/05/95 Postgres95 Postgres95
 .SH NAME
 revoke \(em revoke access privileges

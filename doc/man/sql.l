@@ -1,6 +1,6 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/sql.l,v 1.1 1996-08-18 22:14:28 scrappy Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/man/Attic/sql.l,v 1.1.1.1 1996-08-18 22:14:28 scrappy Exp $
 .TH INTRODUCTION SQL 11/5/95 Postgres95 Postgres95
 .SH "Section 4 \(em SQL Commands (COMMANDS)"
 .SH "General Information"
