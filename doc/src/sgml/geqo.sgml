@@ -1,10 +1,13 @@
 <!--
-$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/geqo.sgml,v 1.6 1999-02-18 05:26:17 momjian Exp $
+$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/geqo.sgml,v 1.7 1999-02-19 01:57:08 thomas Exp $
 Genetic Optimizer
 
 $Log: geqo.sgml,v $
-Revision 1.6  1999-02-18 05:26:17  momjian
-Enable bushy plans by default.
+Revision 1.7  1999-02-19 01:57:08  thomas
+Fix SGML markup from last content changes.
+
+Revision 1.7  1999/02/19 01:57:08  thomas
+Fix SGML markup from last content changes.
 
 Revision 1.6  1999/02/18 05:26:17  momjian
 Enable bushy plans by default.
@@ -311,8 +314,6 @@ Suggestions are welcome :-(
 </sect3>
 </sect2>
 
-<Sect2>
-<Title>Further Improvements</Title>
 
 <BIBLIOGRAPHY Id="geqo-biblio">
 <TITLE>
@@ -395,6 +396,5 @@ The Benjamin/Cummings Pub., Inc.
 </BIBLIOENTRY>
 </BIBLIOGRAPHY>
 
-</sect2>
 </sect1>
 </Chapter>
