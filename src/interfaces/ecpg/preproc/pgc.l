@@ -12,7 +12,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/ecpg/preproc/pgc.l,v 1.112 2003-05-29 12:00:21 meskes Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/ecpg/preproc/pgc.l,v 1.113 2003-05-29 13:59:26 meskes Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -540,7 +540,7 @@ cppline			{space}*#(.*\\{space})+.*
 						yylval.str = mm_strdup(yytext);
 						return FCONST;
 					}
-<SQL>:{identifier}(("->"|\.){identifier})*	{
+<SQL>:{identifier}((("->"|\.){identifier})|(\[{array}\]))*	{
 						yylval.str = mm_strdup(yytext+1);
 						return(CVARIABLE);
 					}
