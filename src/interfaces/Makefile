@@ -4,13 +4,13 @@
 #
 # Copyright (c) 1994, Regents of the University of California
 #
-# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/Makefile,v 1.41 2000-07-19 16:30:06 petere Exp $
+# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/Makefile,v 1.42 2000-08-31 16:11:30 petere Exp $
 #
 #-------------------------------------------------------------------------
 
 subdir = src/interfaces
 top_builddir = ../..
-include ../Makefile.global
+include $(top_builddir)/src/Makefile.global
 
 DIRS := libpq ecpg libpgeasy
 

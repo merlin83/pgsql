@@ -4,13 +4,13 @@
 #
 # Copyright (c) 1994, Regents of the University of California
 #
-# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/initlocation/Attic/Makefile,v 1.9 2000-06-27 00:31:00 petere Exp $
+# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/initlocation/Attic/Makefile,v 1.10 2000-08-31 16:11:07 petere Exp $
 #
 #-------------------------------------------------------------------------
 
 subdir = src/bin/initlocation
 top_builddir = ../../..
-include ../../Makefile.global
+include $(top_builddir)/src/Makefile.global
 
 all: initlocation
 
