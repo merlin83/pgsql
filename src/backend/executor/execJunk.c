@@ -7,10 +7,12 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/execJunk.c,v 1.3 1996-11-08 05:55:55 momjian Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/execJunk.c,v 1.4 1997-01-10 20:17:25 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
+
+#include <string.h>
 
 #include "postgres.h"
 

@@ -7,10 +7,12 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/catalog.c,v 1.5 1996-11-10 02:59:21 momjian Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/catalog.c,v 1.6 1997-01-10 20:16:34 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
+#include <string.h>
+
 #include <postgres.h>
 
 #include <miscadmin.h>  /* for DataDir */

@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/lmgr.c,v 1.3 1996-11-08 05:58:47 momjian Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/lmgr.c,v 1.4 1997-01-10 20:18:47 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -17,6 +17,8 @@
 #ifdef	LOCKDEBUGALL
 #define LOCKDEBUG	1
 #endif /*  LOCKDEBUGALL */
+
+#include <string.h>
 
 #include "postgres.h"
 

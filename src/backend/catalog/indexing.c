@@ -8,10 +8,12 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/indexing.c,v 1.8 1997-01-10 09:51:40 vadim Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/indexing.c,v 1.9 1997-01-10 20:16:47 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
+#include <string.h>
+
 #include <postgres.h>
 
 #include <utils/builtins.h>

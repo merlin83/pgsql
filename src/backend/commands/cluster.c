@@ -14,10 +14,12 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/cluster.c,v 1.9 1996-11-13 20:48:12 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/cluster.c,v 1.10 1997-01-10 20:17:05 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
+#include <string.h>
+
 #include <postgres.h>
 
 #include <catalog/pg_index.h>

@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/dest.c,v 1.4 1997-01-08 08:36:31 bryanh Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/dest.c,v 1.5 1997-01-10 20:19:00 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -24,6 +24,8 @@
  *
  */
 #include <stdio.h>		/* for sprintf() */
+#include <string.h>
+
 #include "postgres.h"
 
 #include "access/htup.h"

@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/ipc/Attic/spin.c,v 1.2 1996-11-03 05:07:02 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/ipc/Attic/spin.c,v 1.3 1997-01-10 20:18:35 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -26,6 +26,9 @@
  */
 #include <errno.h>
 #include "postgres.h"
+#ifndef HAS_TEST_AND_SET
+#include <sys/sem.h>
+#endif
 #include "storage/ipc.h"
 #include "storage/shmem.h"
 #include "storage/spin.h"
