@@ -219,7 +219,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/Attic/gram.c,v 2.27 1998-08-19 14:51:26 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/Attic/gram.c,v 2.28 1998-08-23 22:25:47 momjian Exp $
  *
  * HISTORY
  *	  AUTHOR			DATE			MAJOR EVENT
