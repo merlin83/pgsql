@@ -4,15 +4,14 @@
 #    Makefile for port/linux
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/linuxalpha/Attic/Makefile,v 1.1 1997-03-14 06:01:11 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/linuxalpha/Attic/Makefile,v 1.2 1997-12-20 00:26:08 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR = ../../..
 include ../../../Makefile.global
 
-INCLUDE_OPT = -I../.. \
-              -I../../../include
+INCLUDE_OPT = -I../.. 
 
 CFLAGS+=$(INCLUDE_OPT)
 

@@ -4,7 +4,7 @@
 #    Makefile for lib (miscellaneous stuff)
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/lib/Makefile,v 1.8 1997-12-17 04:58:40 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/lib/Makefile,v 1.9 1997-12-20 00:23:48 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -12,10 +12,6 @@ SRCDIR = ../..
 include ../../Makefile.global
 
 INCLUDE_OPT = -I.. 
-
-ifdef PORTNAME
-INCLUDE_OPT+=-I../port/$(PORTNAME) 
-endif
 
 CFLAGS+=$(INCLUDE_OPT)
 

@@ -4,15 +4,14 @@
 #    Makefile for port/dgux
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/dgux/Attic/Makefile,v 1.2 1996-11-09 06:19:14 momjian Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/dgux/Attic/Makefile,v 1.3 1997-12-20 00:25:27 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR = ../../..
 include ../../../Makefile.global
 
-INCLUDE_OPT = -I../.. \
-              -I../../../include
+INCLUDE_OPT = -I../.. 
 
 CFLAGS+=$(INCLUDE_OPT)
 
