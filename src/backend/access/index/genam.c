@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/index/genam.c,v 1.17.2.1 1999-08-02 05:24:38 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/index/genam.c,v 1.17.2.2 1999-08-02 05:56:38 scrappy Exp $
  *
  * NOTES
  *	  many of the old access method routines have been turned into

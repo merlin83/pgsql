@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/index/indexam.c,v 1.30 1999-02-13 23:14:30 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/index/indexam.c,v 1.30.2.1 1999-08-02 05:56:39 scrappy Exp $
  *
  * INTERFACE ROUTINES
  *		index_open		- open an index relation by relationId
@@ -63,13 +63,11 @@
  *-------------------------------------------------------------------------
  */
 
-#include <postgres.h>
+#include "postgres.h"
 
-#include <access/genam.h>
-#include <utils/relcache.h>
-#include <fmgr.h>
-#include <storage/lmgr.h>
-#include <access/heapam.h>
+#include "access/genam.h"
+#include "access/heapam.h"
+#include "utils/relcache.h"
 
 /* ----------------
  *	 undefine macros we aren't going to use that would otherwise
