@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/init/globals.c,v 1.46 2000-09-06 14:15:22 petere Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/init/globals.c,v 1.47 2000-11-12 20:51:52 tgl Exp $
  *
  * NOTES
  *	  Globals used all over the place should be declared here and not
@@ -52,7 +52,6 @@ Relation	reldesc;			/* current relation descriptor */
 char		OutputFileName[MAXPGPATH] = "";
 
 BackendId	MyBackendId;
-BackendTag	MyBackendTag;
 
 char	   *DatabaseName = NULL;
 char	   *DatabasePath = NULL;
