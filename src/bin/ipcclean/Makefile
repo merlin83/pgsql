@@ -4,7 +4,7 @@
 #
 # Copyright (c) 1994, Regents of the University of California
 #
-# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/ipcclean/Attic/Makefile,v 1.12 2000-08-31 16:11:08 petere Exp $
+# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/ipcclean/Attic/Makefile,v 1.13 2000-09-08 18:29:23 petere Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -16,6 +16,7 @@ all: ipcclean
 
 ipcclean: ipcclean.sh
 	cp $< $@
+	chmod a+x $@
 
 install: all installdirs
 	$(INSTALL_SCRIPT) ipcclean $(bindir)/ipcclean
