@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/Attic/recipe.c,v 1.28 1999-02-13 23:15:07 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/_deadcode/Attic/recipe.c,v 1.1 1999-02-24 17:29:00 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
