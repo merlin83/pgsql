@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/elog.c,v 1.13 1997-03-12 21:10:53 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/elog.c,v 1.14 1997-03-18 21:30:39 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -50,7 +50,8 @@ elog(int lev, const char *fmt, ... )
 #if !defined(BSD44_derived) && \
     !defined(bsdi) && \
     !defined(bsdi_2_1) && \
-    !defined(linuxalpha)
+    !defined(linuxalpha) && \
+    !defined(__GLIBC__)
     extern	char	*sys_errlist[];
 #endif /* bsd derived */
 #ifndef PG_STANDALONE
