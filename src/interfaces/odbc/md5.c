@@ -10,7 +10,7 @@
  *
  *	Sverre H. Huseby <sverrehu@online.no>
  *
- * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/odbc/Attic/md5.c,v 1.1 2001-11-12 00:54:28 inoue Exp $
+ * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/odbc/Attic/md5.c,v 1.2 2001-11-12 01:56:12 momjian Exp $
  */
 
 
