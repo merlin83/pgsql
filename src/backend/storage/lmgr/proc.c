@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/proc.c,v 1.113 2001-10-25 05:49:42 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/proc.c,v 1.114 2001-10-28 06:25:50 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -653,7 +653,7 @@ ProcSleep(LOCKMETHODTABLE *lockMethodTable,
 	MyProc->waitHolder = holder;
 	MyProc->waitLockMode = lockmode;
 
-	MyProc->errType = STATUS_OK;		/* initialize result for success */
+	MyProc->errType = STATUS_OK;	/* initialize result for success */
 
 	/*
 	 * If we detected deadlock, give up without waiting.  This must agree
