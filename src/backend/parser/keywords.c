@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/keywords.c,v 1.40 1998-08-24 01:39:18 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/keywords.c,v 1.41 1998-08-25 15:04:24 thomas Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -186,6 +186,7 @@ static ScanKeyword ScanKeywords[] = {
 	{"second", SECOND_P},
 	{"select", SELECT},
 	{"sequence", SEQUENCE},
+	{"serial", SERIAL},
 	{"set", SET},
 	{"setof", SETOF},
 	{"show", SHOW},
