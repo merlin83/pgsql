@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-connect.c,v 1.15 1996-11-09 10:39:51 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-connect.c,v 1.16 1996-11-10 01:46:14 bryanh Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -22,6 +22,7 @@
 #include <netdb.h>
 #include <errno.h>
 #include <signal.h>
+#include <ctype.h>      /* for isspace() */
 
 #include "postgres.h"
 #include "libpq/pqcomm.h" /* for decls of MsgType, PacketBuf, StartupInfo */
