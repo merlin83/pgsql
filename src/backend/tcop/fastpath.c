@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/fastpath.c,v 1.11 1998-01-11 21:16:01 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/fastpath.c,v 1.12 1998-01-26 01:41:28 scrappy Exp $
  *
  * NOTES
  *	  This cruft is the server side of PQfn.
@@ -336,7 +336,7 @@ HandleFunctionRequest()
 				else
 				{				/* ... fixed */
 					/* XXX cross our fingers and trust "argsize" */
-					if (!(p = palloc(argsize)))
+					if (!(p = palloc(argsize + 1)))
 					{
 						elog(ERROR, "HandleFunctionRequest: palloc failed");
 					}
