@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/bootstrap/bootparse.y,v 1.3 1996-10-21 08:31:18 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/bootstrap/bootparse.y,v 1.4 1996-11-13 20:47:45 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -231,7 +231,7 @@ DeclareIndexStmt:
 		  DefineIndex(LexIDStr($5), 
 			      LexIDStr($3), 
 			      LexIDStr($7),
-			      params, NIL, 0, NIL);
+			      params, NIL, 0, 0, NIL);
 		  DO_END;
 		}
 	;
