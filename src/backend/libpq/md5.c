@@ -10,12 +10,16 @@
  *
  *	Sverre H. Huseby <sverrehu@online.no>
  *
- * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/libpq/md5.c,v 1.9 2001-10-25 05:49:30 momjian Exp $
+ * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/libpq/md5.c,v 1.10 2001-11-12 01:42:03 momjian Exp $
  */
 
-#include "postgres.h"
 
+#ifndef MD5_ODBC
+#include "postgres.h"
 #include "libpq/crypt.h"
+#else
+#include "md5.h"
+#endif
 
 #ifdef FRONTEND
 #undef palloc
