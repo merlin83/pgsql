@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/path/Attic/predmig.c,v 1.18 1999-02-13 23:16:22 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/path/_deadcode/Attic/predmig.c,v 1.1 1999-02-18 19:58:53 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
