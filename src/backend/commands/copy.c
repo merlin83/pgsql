@@ -7,12 +7,13 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/copy.c,v 1.176 2002-10-14 16:51:28 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/copy.c,v 1.177 2002-10-19 00:25:36 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include "postgres.h"
 
+#include <errno.h>
 #include <unistd.h>
 #include <sys/stat.h>
 
