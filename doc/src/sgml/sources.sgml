@@ -1,5 +1,5 @@
 <!--
-$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/sources.sgml,v 2.5 2001-11-21 06:09:45 thomas Exp $
+$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/sources.sgml,v 2.6 2002-01-20 22:19:56 petere Exp $
 -->
 
  <chapter id="source">
@@ -14,7 +14,7 @@ $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/sources.sgml,v 2.5 20
    </para>
 
    <para>
-    For emacs, add the following (or something similar)
+    For Emacs, add the following (or something similar)
     to your <filename>~/.emacs</filename> 
     initialization file:
 
