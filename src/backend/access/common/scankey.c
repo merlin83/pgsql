@@ -7,15 +7,15 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/common/scankey.c,v 1.2 1996-10-19 04:51:42 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/common/scankey.c,v 1.3 1996-10-20 08:31:34 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
 
 #include "postgres.h"
 
+#include "access/attnum.h"
 #include "access/skey.h"
-
 
 /*
  * ScanKeyEntryIsLegal --
