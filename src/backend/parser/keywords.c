@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/keywords.c,v 1.92 2001-05-08 21:06:43 petere Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/keywords.c,v 1.93 2001-06-19 22:39:11 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -265,6 +265,7 @@ static ScanKeyword ScanKeywords[] = {
 	{"type", TYPE_P},
 	{"union", UNION},
 	{"unique", UNIQUE},
+	{"unknown", UNKNOWN},
 	{"unlisten", UNLISTEN},
 	{"until", UNTIL},
 	{"update", UPDATE},
