@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/stringutils.c,v 1.2 1996-07-28 07:08:15 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/stringutils.c,v 1.3 1996-08-06 20:23:14 julian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -42,7 +42,7 @@ char *rightTrim(char *s)
 {
   char *sEnd;
   sEnd = s+strlen(s)-1;
-  while (isspace(*sEnd))
+  while (sEnd >= s && isspace(*sEnd))
     sEnd--;
   if (sEnd < s)
     s[0]='\0';

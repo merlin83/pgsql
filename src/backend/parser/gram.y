@@ -10,7 +10,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/gram.y,v 1.2 1996-07-23 02:23:33 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/gram.y,v 1.6 1996-08-13 01:29:33 scrappy Exp $
  *
  * HISTORY
  *    AUTHOR		DATE		MAJOR EVENT
@@ -173,7 +173,7 @@ static Node *makeA_Expr(int op, char *opname, Node *lexpr, Node *rexpr);
 	CURSOR, DATABASE, DECLARE, DELETE, DELIMITERS, DESC, DISTINCT, DO,
 	DROP, END_TRANS,
 	EXTEND, FETCH, FOR, FORWARD, FROM, FUNCTION, GRANT, GROUP, 
-	HAVING, HEAVY, IN, INDEX, INHERITS, INSERT, INSTEAD, INTO, 
+	HAVING, HEAVY, IN, INDEX, INHERITS, INSERT, INSTEAD, INTO, IS,
 	ISNULL, LANGUAGE, LIGHT, LISTEN, LOAD, MERGE, MOVE, NEW, 
 	NONE, NOT, NOTHING, NOTIFY, NOTNULL, 
         ON, OPERATOR, OPTION, OR, ORDER, 
@@ -201,6 +201,7 @@ static Node *makeA_Expr(int op, char *opname, Node *lexpr, Node *rexpr);
 %nonassoc Op
 %nonassoc NOTNULL
 %nonassoc ISNULL
+%nonassoc IS
 %left  	'+' '-'
 %left  	'*' '/'
 %left	'|'		/* this is the relation union op, not logical or */
@@ -1349,7 +1350,7 @@ ReplaceStmt:  UPDATE relation_name
 
 CursorStmt:  DECLARE name opt_binary CURSOR FOR 
 	     SELECT opt_unique res_target_list2	
-	     from_clause where_clause sort_clause
+	     from_clause where_clause group_clause sort_clause
 		{
 		    CursorStmt *n = makeNode(CursorStmt);
 
@@ -1370,7 +1371,8 @@ CursorStmt:  DECLARE name opt_binary CURSOR FOR
 		    n->targetList = $8;
 		    n->fromClause = $9;
 		    n->whereClause = $10;
-		    n->orderClause = $11;
+		    n->groupClause = $11;
+		    n->orderClause = $12;
 		    $$ = (Node *)n;
 		}
 	;
@@ -1425,12 +1427,20 @@ sortby_list:  sortby
 sortby:  Id OptUseOp
 		{ 
 		    $$ = makeNode(SortBy);
+		    $$->range = NULL;
 		    $$->name = $1;
 		    $$->useOp = $2;
 		}
-	| attr OptUseOp
+	| Id '.' Id OptUseOp
+		{
+		    $$ = makeNode(SortBy);
+		    $$->range = $1;
+		    $$->name = $3;
+		    $$->useOp = $4;
+		}
+        | /*EMPTY*/
                 { 
-                  yyerror("parse error: use 'sort by attribute_name'");
+                  yyerror("parse error: use 'order by attribute_name'");
                 }
 	;
 
@@ -1805,7 +1815,11 @@ a_expr:  attr opt_indirection
 		}
 	| a_expr ISNULL
 		{   $$ = makeA_Expr(ISNULL, NULL, $1, NULL); }
+	| a_expr IS PNULL
+		{   $$ = makeA_Expr(ISNULL, NULL, $1, NULL); }
 	| a_expr NOTNULL
+		{   $$ = makeA_Expr(NOTNULL, NULL, $1, NULL); }
+	| a_expr IS NOT PNULL
 		{   $$ = makeA_Expr(NOTNULL, NULL, $1, NULL); }
 	| a_expr AND a_expr
 		{   $$ = makeA_Expr(AND, NULL, $1, $3); }
@@ -2098,7 +2112,7 @@ xlateSqlType(char *name)
 	return "int2";
     else if (!strcasecmp(name, "float") ||
 	     !strcasecmp(name, "real"))
-	return "float4";
+	return "float8";
     else
 	return name;
 }

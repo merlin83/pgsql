@@ -10,7 +10,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/postmaster/postmaster.c,v 1.3 1996-07-23 02:23:47 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/postmaster/postmaster.c,v 1.5 1996-08-14 04:51:34 scrappy Exp $
  *
  * NOTES
  *
@@ -49,6 +49,10 @@
 #define MAXINT        INT_MAX
 #else
 #include <netdb.h>		/* for MAXHOSTNAMELEN on some */
+#ifndef MAXHOSTNAMELEN		/* for MAXHOSTNAMELEN everywhere else */
+#include <arpa/nameser.h>
+#define MAXHOSTNAMELEN		MAXDNAME
+#endif
 # if defined(PORTNAME_BSD44_derived) || \
      defined(PORTNAME_bsdi) || \
      defined(PORTNAME_bsdi_2_1)
@@ -1106,8 +1110,10 @@ checkDataDir()
     sprintf(path, "%s%cbase%ctemplate1%cpg_class", DataDir, SEP_CHAR, SEP_CHAR,
 	    SEP_CHAR);
     if ((fp=fopen(path, "r")) == NULL) {
-	fprintf(stderr, "%s: data base not found in directory \"%s\"\n",
-		progname, DataDir);
+        fprintf(stderr, "%s does not find the database.  Expected to find it "
+                "in the PGDATA directory \"%s\", but unable to open directory "
+                "with pathname \"%s\".\n", 
+                progname, DataDir, path);
 	exit(2);
     }
     fclose(fp);
