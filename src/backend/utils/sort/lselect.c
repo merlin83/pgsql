@@ -8,14 +8,14 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/sort/Attic/lselect.c,v 1.1.1.1 1996-07-09 06:22:10 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/sort/Attic/lselect.c,v 1.2 1996-11-03 06:54:35 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include <string.h>
 #include <stdio.h>
 
-#include "c.h"
+#include "postgres.h"
 
 #include "storage/buf.h"
 #include "access/skey.h"
