@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/lock.c,v 1.123 2003-07-24 22:04:14 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/lock.c,v 1.124 2003-07-28 00:09:15 tgl Exp $
  *
  * NOTES
  *	  Outside modules can create a lock table and acquire/release
@@ -1197,7 +1197,7 @@ LockReleaseAll(LOCKMETHOD lockmethod, PGPROC *proc,
 	lockMethodTable = LockMethodTable[lockmethod];
 	if (!lockMethodTable)
 	{
-		elog(WARNING, "bad lockmethod %d", lockmethod);
+		elog(WARNING, "bad lock method: %d", lockmethod);
 		return FALSE;
 	}
 
