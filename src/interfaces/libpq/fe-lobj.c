@@ -7,12 +7,13 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-lobj.c,v 1.4 1996-11-11 12:16:56 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-lobj.c,v 1.5 1996-11-16 05:18:58 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include <unistd.h>
 #include <stdio.h>
+#include <string.h>
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <sys/types.h>
