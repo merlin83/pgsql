@@ -7,14 +7,14 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/regress/GNUmakefile,v 1.6 1997-04-26 06:31:55 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/regress/GNUmakefile,v 1.7 1997-04-27 02:56:03 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR= ../..
 include ../../Makefile.global
 
-CFLAGS+= -I$(LIBPQDIR) 
+CFLAGS+= -I$(LIBPQDIR) -I../../include
 
 LDADD+= -L$(LIBPQDIR) -lpq
         
