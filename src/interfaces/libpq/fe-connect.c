@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-connect.c,v 1.26 1997-03-25 02:37:21 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-connect.c,v 1.27 1997-03-25 09:08:06 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -536,7 +536,7 @@ connectDB(PGconn *conn)
 			{
 			const char *val;
 			
-			if(val = getenv(eo->envName))
+			if((val = getenv(eo->envName)))
 				{
 				PGresult *res;
 				
