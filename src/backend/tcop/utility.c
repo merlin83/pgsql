@@ -10,7 +10,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/utility.c,v 1.101 2000-11-08 16:31:06 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/utility.c,v 1.102 2000-11-14 18:37:43 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -604,7 +604,8 @@ ProcessUtility(Node *parsetree,
 
 				set_ps_display(commandTag = "CREATE DATABASE");
 
-				createdb(stmt->dbname, stmt->dbpath, stmt->encoding);
+				createdb(stmt->dbname, stmt->dbpath,
+						 stmt->dbtemplate, stmt->encoding);
 			}
 			break;
 
