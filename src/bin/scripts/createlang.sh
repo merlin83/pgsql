@@ -4,10 +4,10 @@
 # createlang --
 #   Install a procedural language in a database
 #
-# Portions Copyright (c) 1996-2001, PostgreSQL Global Development Group
+# Portions Copyright (c) 1996-2002, PostgreSQL Global Development Group
 # Portions Copyright (c) 1994, Regents of the University of California
 #
-# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/scripts/Attic/createlang.sh,v 1.35 2002-04-12 09:37:10 momjian Exp $
+# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/scripts/Attic/createlang.sh,v 1.36 2002-06-20 20:29:42 momjian Exp $
 #
 #-------------------------------------------------------------------------
 
