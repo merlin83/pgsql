@@ -7,7 +7,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/cleardbdir/Attic/Makefile,v 1.3 1996-11-12 02:54:30 bryanh Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/cleardbdir/Attic/Makefile,v 1.4 1996-11-24 03:55:19 bryanh Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -25,3 +25,4 @@ install: cleardbdir
 clean: 
 	rm -f cleardbdir
 
+dep:
