@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/smgr/md.c,v 1.73 2000-07-10 04:32:00 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/smgr/md.c,v 1.74 2000-07-17 03:05:11 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -22,8 +22,9 @@
 #include "catalog/catalog.h"
 #include "miscadmin.h"
 #include "storage/smgr.h"
-#include "utils/inval.h"		/* ImmediateSharedRelationCacheInvalidate()
-								 * */
+#include "utils/inval.h"
+#include "utils/memutils.h"
+
 
 #undef DIAGNOSTIC
 
