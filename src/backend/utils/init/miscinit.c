@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/init/miscinit.c,v 1.32 1999-07-16 03:14:26 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/init/miscinit.c,v 1.33 1999-07-16 05:23:26 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -24,10 +24,10 @@
 #include "postgres.h"
 
 
-#include "miscadmin.h"
 
 #include "catalog/catname.h"
 #include "catalog/pg_shadow.h"
+#include "miscadmin.h"
 #include "utils/syscache.h"
 
 
