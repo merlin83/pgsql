@@ -1,3 +1,10 @@
+/*
+ * psql - the PostgreSQL interactive terminal
+ *
+ * Copyright 2000 by PostgreSQL Global Development Team
+ *
+ * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/large_obj.c,v 1.6 2000-01-18 23:30:23 petere Exp $
+ */
 #include <c.h>
 #include "large_obj.h"
 
