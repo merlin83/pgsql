@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/Attic/nbtscan.c,v 1.5 1996-11-05 10:35:33 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/Attic/nbtscan.c,v 1.6 1996-11-15 18:37:00 momjian Exp $
  *
  *
  * NOTES
@@ -78,9 +78,7 @@ _bt_dropscan(IndexScanDesc scan)
     else
 	last->btsl_next = chk->btsl_next;
     
-#ifdef PERFECT_MEM
     pfree (chk);
-#endif /* PERFECT_MEM */
 }
 
 void
