@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/init/miscinit.c,v 1.51 2000-07-02 15:20:56 petere Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/init/miscinit.c,v 1.52 2000-07-14 16:41:44 petere Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -260,10 +260,12 @@ convertstr(unsigned char *buff, int len, int dest)
 	for (i = 0; i < len; i++, buff++)
 	{
 		if (*buff > 127)
+		{
 			if (dest)
 				*buff = RecodeForwTable[*buff - 128];
 			else
 				*buff = RecodeBackTable[*buff - 128];
+		}
 	}
 	return ch;
 }
