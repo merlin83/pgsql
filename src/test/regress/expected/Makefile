@@ -7,11 +7,11 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/regress/expected/Attic/Makefile,v 1.3 1998-01-17 23:39:35 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/regress/expected/Attic/Makefile,v 1.4 1998-09-29 12:40:52 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 
-CLFILES=	create_function_1.out create_function_2.out copy.out constraints.out misc.out
+CLFILES=	create_function_1.out create_function_2.out copy.out constraints.out misc.out install_plpgsql.out
 
 clean:
 	rm -f $(CLFILES)
