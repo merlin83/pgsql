@@ -4,7 +4,7 @@
 #    Makefile for port/sparc
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/sparc/Attic/Makefile,v 1.1 1996-10-27 09:50:43 bryanh Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/sparc/Attic/Makefile,v 1.2 1996-11-09 06:20:07 momjian Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -12,7 +12,6 @@ SRCDIR = ../../..
 include ../../../Makefile.global
 
 INCLUDE_OPT = -I../.. \
-              -I../../include \
               -I../../../include
 
 CFLAGS+=$(INCLUDE_OPT)
