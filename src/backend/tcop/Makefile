@@ -4,7 +4,7 @@
 #    Makefile for tcop
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/Makefile,v 1.20 1999-12-13 22:34:16 momjian Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/Makefile,v 1.21 2000-01-19 02:58:56 petere Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -12,10 +12,6 @@ SRCDIR= ../..
 include ../../Makefile.global
 
 CFLAGS+= -I..
-
-ifdef MULTIBYTE
-CFLAGS+= $(MBFLAGS)
-endif
 
 ifeq ($(CC), gcc)
 CFLAGS+= -Wno-error
