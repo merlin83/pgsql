@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/list.c,v 1.1.1.1 1996-07-09 06:21:32 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/list.c,v 1.2 1996-12-20 20:31:31 momjian Exp $
  *
  * NOTES
  *    XXX a few of the following functions are duplicated to handle
@@ -57,10 +57,10 @@ makeList(void *elem, ...)
 }
 
 List *
-lcons(void *datum, List *list)
+lcons(void *obj, List *list)
 {
     List *l = makeNode(List);
-    lfirst(l) = datum;
+    lfirst(l) = obj;
     lnext(l) = list;
     return l;
 }
