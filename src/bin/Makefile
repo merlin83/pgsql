@@ -7,7 +7,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/Makefile,v 1.13 1998-04-06 03:23:01 momjian Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/Makefile,v 1.14 1998-07-24 03:32:02 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -16,6 +16,10 @@ include ../Makefile.global
 
 DIRS = pg_id pg_version psql pg_dump pg_passwd cleardbdir createdb \
 	createuser destroydb destroyuser initdb initlocation ipcclean
+
+ifdef MB
+DIRS += pg_encoding
+endif
 
 #
 # TCL/TK programs
