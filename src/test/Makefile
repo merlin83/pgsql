@@ -7,12 +7,10 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/Makefile,v 1.1.1.1 1996-07-09 06:22:20 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/Makefile,v 1.2 1996-11-12 11:42:41 bryanh Exp $
 #
 #-------------------------------------------------------------------------
 
-SUBDIR= bench regress
-
-include ../mk/postgres.subdir.mk
-
-
+.DEFAULT all:
+	$(MAKE) -C bench $@
+	$(MAKE) -C regress $@
