@@ -1,5 +1,5 @@
 <!--
-$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/Attic/admin.sgml,v 1.33 2001-02-04 15:28:18 petere Exp $
+$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/Attic/admin.sgml,v 1.34 2001-05-12 22:51:34 petere Exp $
 -->
 
 <book id="admin">
@@ -38,6 +38,7 @@ $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/Attic/admin.sgml,v 1.
 
 <![%single-book;[
   &biblio;
+  &bookindex;
 ]]>
 </book>
 
