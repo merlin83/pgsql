@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/Attic/filename.c,v 1.22 1999-07-17 20:17:55 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/Attic/filename.c,v 1.23 1999-10-25 03:07:49 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -31,7 +31,7 @@ filename_in(char *file)
 	 * (shexpand)
 	 */
 
-	str = (char *) palloc(MAXPATHLEN * sizeof(*str));
+	str = (char *) palloc(MAXPGPATH);
 	str[0] = '\0';
 	if (file[0] == '~')
 	{
