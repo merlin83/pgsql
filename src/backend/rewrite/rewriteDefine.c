@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/rewrite/rewriteDefine.c,v 1.69 2002-04-27 03:45:03 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/rewrite/rewriteDefine.c,v 1.70 2002-05-12 20:10:04 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -388,7 +388,7 @@ setRuleCheckAsUser(Query *qry, Oid userid)
 	{
 		RangeTblEntry *rte = (RangeTblEntry *) lfirst(l);
 
-		if (rte->subquery)
+		if (rte->rtekind == RTE_SUBQUERY)
 		{
 			/* Recurse into subquery in FROM */
 			setRuleCheckAsUser(rte->subquery, userid);
