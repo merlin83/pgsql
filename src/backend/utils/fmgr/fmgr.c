@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/fmgr/fmgr.c,v 1.28 1999-05-25 16:12:28 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/fmgr/fmgr.c,v 1.29 1999-07-15 15:20:30 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -28,7 +28,6 @@
 #include "nodes/params.h"
 
 #include "utils/builtins.h"
-#include "utils/elog.h"
 
 #include "nodes/parsenodes.h"
 #include "commands/trigger.h"

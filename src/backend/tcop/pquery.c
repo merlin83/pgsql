@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/pquery.c,v 1.23 1999-05-25 16:11:41 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/pquery.c,v 1.24 1999-07-15 15:20:00 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -17,9 +17,7 @@
 
 #include "tcop/tcopdebug.h"
 
-#include "utils/palloc.h"
 #include "nodes/nodes.h"
-#include "utils/mcxt.h"
 #include "miscadmin.h"
 #include "utils/portal.h"
 

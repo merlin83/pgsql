@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/dest.c,v 1.31 1999-05-25 22:42:06 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/dest.c,v 1.32 1999-07-15 15:19:57 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -42,14 +42,12 @@
 #include "libpq/pqformat.h"
 #include "access/printtup.h"
 #include "utils/portal.h"
-#include "utils/palloc.h"
 
 #include "executor/executor.h"
 
 #include "tcop/dest.h"
 
 #include "catalog/pg_type.h"
-#include "utils/mcxt.h"
 
 #include "commands/async.h"
 
