@@ -8,7 +8,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/scripts/Attic/createlang.sh,v 1.1 1999-12-05 20:02:48 momjian Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/scripts/Attic/createlang.sh,v 1.2 1999-12-07 22:41:44 momjian Exp $
 #
 #-------------------------------------------------------------------------
 
