@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/plan/setrefs.c,v 1.3 1997-04-24 15:54:52 vadim Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/plan/setrefs.c,v 1.4 1997-06-12 17:26:15 vadim Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -690,10 +690,13 @@ replace_agg_clause(Node *clause, List *subplanTargetList)
 	 * This is an operator. Recursively call this routine
 	 * for both its left and right operands
 	 */
-	replace_agg_clause((Node*)get_leftop((Expr*)clause),
-			   subplanTargetList);
-	replace_agg_clause((Node*)get_rightop((Expr*)clause),
-			   subplanTargetList);
+	Node *left = (Node*)get_leftop((Expr*)clause);
+	Node *right = (Node*)get_rightop((Expr*)clause);
+	
+	if ( left != (Node*) NULL )
+	    replace_agg_clause(left, subplanTargetList);
+	if ( right != (Node*) NULL )
+	    replace_agg_clause(right, subplanTargetList);
     } else if (IsA(clause,Param) || IsA(clause,Const)) {
 	/* do nothing! */
     } else {
