@@ -1,5 +1,5 @@
 <!--
-$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/datatype.sgml,v 1.43 2000-12-03 14:47:18 thomas Exp $
+$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/datatype.sgml,v 1.44 2000-12-14 22:30:56 petere Exp $
 -->
 
  <chapter id="datatype">
@@ -349,8 +349,7 @@ $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/datatype.sgml,v 1.43 
 
    <para>
     The numeric types have a full set of corresponding arithmetic operators and
-    functions. Refer to <xref linkend="numerical-operators"> 
-    and <xref linkend="math-functions"> for more information.
+    functions. Refer to <xref linkend="functions"> for more information.
    </para>
 
    <para>
