@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpgtcl/Attic/pgtclCmds.c,v 1.29 1998-08-17 03:50:22 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpgtcl/Attic/pgtclCmds.c,v 1.30 1998-09-01 03:28:47 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -149,7 +149,7 @@ tcl_value(char *value)
 	char	   *p;
 
 	if (!value)
-		return ((char *) NULL);
+		return (char *) NULL;
 
 #ifdef TCL_ARRAYS_DEBUG
 	printf("pq_value  = '%s'\n", value);
@@ -218,7 +218,7 @@ tcl_value(char *value)
 #ifdef TCL_ARRAYS_DEBUG
 	printf("tcl_value = '%s'\n\n", value);
 #endif
-	return (value);
+	return value;
 }
 
 #endif

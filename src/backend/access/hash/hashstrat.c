@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/hash/Attic/hashstrat.c,v 1.11 1997-09-08 02:20:21 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/hash/Attic/hashstrat.c,v 1.12 1998-09-01 03:21:02 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -63,7 +63,7 @@ _hash_getstrat(Relation rel,
 
 	Assert(StrategyNumberIsValid(strat));
 
-	return (strat);
+	return strat;
 }
 
 #endif

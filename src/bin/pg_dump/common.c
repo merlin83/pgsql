@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/pg_dump/common.c,v 1.22 1998-06-19 02:55:13 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/pg_dump/common.c,v 1.23 1998-09-01 03:27:19 momjian Exp $
  *
  * Modifications - 6/12/96 - dave@bensoft.com - version 1.13.dhb.2
  *
@@ -490,5 +490,5 @@ fmtId(const char *rawid)
 	}
 	else
 		cp = rawid;
-	return (cp);
+	return cp;
 }	/* fmtId() */
