@@ -1,3 +1,7 @@
+/* $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/ecpg/lib/Attic/misc.c,v 1.4 2001-08-24 14:07:49 petere Exp $ */
+
+#include "postgres_fe.h"
+
 #include <unistd.h>
 #include "ecpgtype.h"
 #include "ecpglib.h"

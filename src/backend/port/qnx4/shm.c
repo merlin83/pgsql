@@ -7,10 +7,12 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/qnx4/Attic/shm.c,v 1.5 2001-05-24 15:53:33 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/qnx4/Attic/shm.c,v 1.6 2001-08-24 14:07:49 petere Exp $
  *
  *-------------------------------------------------------------------------
  */
+
+#include "postgres.h"
 
 #include <errno.h>
 #include <fcntl.h>

@@ -1,4 +1,6 @@
-#include "config.h"
+/* $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/ecpg/lib/Attic/data.c,v 1.14 2001-08-24 14:07:49 petere Exp $ */
+
+#include "postgres_fe.h"
 
 #include <stdlib.h>
 #include <string.h>
