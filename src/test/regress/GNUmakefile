@@ -7,7 +7,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/regress/Attic/GNUMakefile,v 1.1 1997-01-18 08:01:30 bryanh Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/regress/GNUmakefile,v 1.1 1997-01-21 01:27:18 momjian Exp $
 #
 #-------------------------------------------------------------------------
 
