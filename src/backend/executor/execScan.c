@@ -12,7 +12,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/execScan.c,v 1.17 2001-03-22 06:16:12 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/execScan.c,v 1.18 2001-10-25 05:49:27 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -122,7 +122,6 @@ ExecScan(Scan *node,
 		 */
 		if (!qual || ExecQual(qual, econtext, false))
 		{
-
 			/*
 			 * Found a satisfactory scan tuple.
 			 *

@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/lmgr.c,v 1.51 2001-09-27 16:29:12 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/lmgr.c,v 1.52 2001-10-25 05:49:42 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -332,9 +332,9 @@ void
 XactLockTableWait(TransactionId xid)
 {
 	LOCKTAG		tag;
-	TransactionId	myxid = GetCurrentTransactionId();
+	TransactionId myxid = GetCurrentTransactionId();
 
-	Assert(! TransactionIdEquals(xid, myxid));
+	Assert(!TransactionIdEquals(xid, myxid));
 
 	MemSet(&tag, 0, sizeof(tag));
 	tag.relId = XactLockTableId;
