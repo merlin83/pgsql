@@ -1,4 +1,4 @@
-# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/contrib/dblink/Makefile,v 1.4 2001-09-06 10:49:29 petere Exp $
+# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/contrib/dblink/Makefile,v 1.5 2002-06-23 21:58:07 momjian Exp $
 
 subdir = contrib/dblink
 top_builddir = ../..
