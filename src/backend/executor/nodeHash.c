@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeHash.c,v 1.79 2003-08-04 02:39:59 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeHash.c,v 1.80 2003-11-25 21:00:52 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -113,6 +113,7 @@ ExecInitHash(Hash *node, EState *estate)
 	hashstate->ps.plan = (Plan *) node;
 	hashstate->ps.state = estate;
 	hashstate->hashtable = NULL;
+	hashstate->hashkeys = NIL;	/* will be set by parent HashJoin */
 
 	/*
 	 * Miscellaneous initialization
