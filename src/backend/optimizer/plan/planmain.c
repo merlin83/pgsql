@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/plan/planmain.c,v 1.14 1998-01-05 03:32:03 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/plan/planmain.c,v 1.15 1998-01-07 21:04:04 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -407,7 +407,7 @@ make_groupPlan(List **tlist,
 
 	if (length(glc) != 0)
 	{
-		elog(ABORT, "group attribute disappeared from target list");
+		elog(ERROR, "group attribute disappeared from target list");
 	}
 
 	/*
