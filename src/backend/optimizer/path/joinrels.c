@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/path/joinrels.c,v 1.18 1999-02-10 21:02:39 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/path/joinrels.c,v 1.19 1999-02-12 05:56:50 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -216,7 +216,6 @@ init_join_rel(RelOptInfo *outer_rel, RelOptInfo *inner_rel, JoinInfo * joininfo)
 	joinrel->width = 0;
 /*	  joinrel->targetlist = NIL;*/
 	joinrel->pathlist = NIL;
-	joinrel->unorderedpath = (Path *) NULL;
 	joinrel->cheapestpath = (Path *) NULL;
 	joinrel->pruneable = true;
 	joinrel->classlist = NULL;
