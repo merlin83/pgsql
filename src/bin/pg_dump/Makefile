@@ -7,13 +7,15 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/pg_dump/Makefile,v 1.8 1996-11-12 06:10:37 bryanh Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/pg_dump/Makefile,v 1.9 1996-11-26 03:19:36 bryanh Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR= ../..
 include ../Makefile.global
 include ../../Makefile.global
+
+CFLAGS+= -I../../backend/port/${PORTNAME}
 
 OBJS= pg_dump.o common.o
 
