@@ -4,7 +4,7 @@
 #
 # Copyright (c) 1994, Regents of the University of California
 #
-# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/Makefile,v 1.21 2000-06-27 00:31:41 petere Exp $
+# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/Makefile,v 1.22 2000-06-28 18:29:31 petere Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ endif
 .PHONY: submake
 
 submake:
-	$(MAKE) -C $(LIBPQDIR) libpq.a
+	$(MAKE) -C $(LIBPQDIR) all
 
 install: all installdirs
 	$(INSTALL_PROGRAM) psql$(X) $(bindir)/psql$(X)
