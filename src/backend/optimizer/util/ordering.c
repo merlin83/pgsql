@@ -7,10 +7,13 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/util/Attic/ordering.c,v 1.1.1.1 1996-07-09 06:21:38 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/util/Attic/ordering.c,v 1.2 1996-10-31 10:59:41 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
+#include <sys/types.h>
+
+#include "postgres.h"
 
 #include "optimizer/internal.h"
 #include "optimizer/ordering.h"

@@ -7,10 +7,12 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/prep/prepqual.c,v 1.1.1.1 1996-07-09 06:21:38 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/prep/prepqual.c,v 1.2 1996-10-31 10:59:27 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
+#include <sys/types.h>
+
 #include "postgres.h"
 
 #include "nodes/pg_list.h"
