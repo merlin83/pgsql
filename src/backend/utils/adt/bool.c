@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/bool.c,v 1.12 1998-01-05 03:33:55 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/bool.c,v 1.13 1998-01-05 16:39:42 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -72,7 +72,7 @@ boolin(char *b)
 			break;
 	}
 
-	elog(ABORT,"Bad boolean external representation '%s'", b);
+	elog(ERROR,"Bad boolean external representation '%s'", b);
 	/* not reached */
 	return (FALSE);
 } /* boolin() */
