@@ -7,7 +7,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/Makefile,v 1.5 1996-09-23 08:23:33 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/Makefile,v 1.6 1996-09-23 18:14:08 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -15,8 +15,8 @@ MKDIR=	../mk
 include $(MKDIR)/postgres.mk
 
 CFLAGS+= -I../backend/include \
-	-I$../include \
-	-I$../backend \
+	-I../include \
+	-I../backend \
 	-I. \
 
 ifdef KRBVERS
