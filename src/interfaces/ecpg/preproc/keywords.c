@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/ecpg/preproc/keywords.c,v 1.11 1999-02-20 07:01:00 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/ecpg/preproc/keywords.c,v 1.12 1999-03-20 19:46:53 meskes Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -188,7 +188,6 @@ static ScanKeyword ScanKeywords[] = {
 	{"procedure", PROCEDURE},
 	{"public", PUBLIC},
 	{"read", READ},
-	{"recipe", RECIPE},
 	{"references", REFERENCES},
 	{"relative", RELATIVE},
 	{"rename", RENAME},
