@@ -556,7 +556,7 @@ char *yytext;
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/Attic/scan.c,v 1.29 1998-10-08 18:29:49 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/Attic/scan.c,v 1.30 1998-10-09 03:07:54 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
