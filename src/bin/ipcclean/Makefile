@@ -7,7 +7,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/ipcclean/Attic/Makefile,v 1.6 1998-04-06 01:15:09 momjian Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/ipcclean/Attic/Makefile,v 1.7 1998-04-06 16:50:36 momjian Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -23,7 +23,7 @@ ipcclean:
 	sed $(SEDSCRIPT) <ipcclean.sh >ipcclean
 
 install: ipcclean
-	$(INSTALL) $(INSTL_EXE_OPTS) $< $(DESTDIR)$(BINDIR)/$<
+	$(INSTALL) $(INSTL_EXE_OPTS) $< $(BINDIR)/$<
 
 clean:
 	rm -f ipcclean
