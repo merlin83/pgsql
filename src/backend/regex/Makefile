@@ -4,14 +4,13 @@
 #    Makefile for regex
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/regex/Makefile,v 1.12 2000-01-19 02:58:53 petere Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/regex/Makefile,v 1.13 2000-05-29 05:44:58 tgl Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR = ../..
 include ../../Makefile.global
 
-CFLAGS += -I..
 CFLAGS += -DPOSIX_MISTAKE 
 
 DEBUGOBJ =

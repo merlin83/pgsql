@@ -4,14 +4,12 @@
 #    Makefile for parser
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/Makefile,v 1.24 2000-01-19 02:58:53 petere Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/Makefile,v 1.25 2000-05-29 05:44:53 tgl Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR= ../..
 include ../../Makefile.global
-
-CFLAGS += -I..
 
 ifeq ($(CC), gcc)
 CFLAGS+= -Wno-error
