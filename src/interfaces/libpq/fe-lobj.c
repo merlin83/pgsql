@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-lobj.c,v 1.15 1998-08-17 03:50:37 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-lobj.c,v 1.16 1998-09-01 04:40:07 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -28,7 +28,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 
-#include "libpq/libpq-fs.h"	/* must come after sys/stat.h */
+#include "libpq/libpq-fs.h"		/* must come after sys/stat.h */
 
 
 #define LO_BUFSIZE		  1024
