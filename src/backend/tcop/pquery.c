@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/pquery.c,v 1.14 1998-02-13 03:42:32 vadim Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/pquery.c,v 1.15 1998-02-26 04:36:32 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -66,7 +66,7 @@ CreateQueryDesc(Query *parsetree,
  *		Note: this may someday take parameters -cim 9/18/89
  * ----------------------------------------------------------------
  */
-EState	   *
+EState *
 CreateExecutorState(void)
 {
 	EState	   *state;
