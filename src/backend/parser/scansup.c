@@ -8,10 +8,13 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/scansup.c,v 1.2 1996-07-23 02:23:35 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/scansup.c,v 1.3 1996-08-27 07:42:29 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
+
+#include "config.h"
+
 #include <ctype.h>
 #include <string.h>
 #include "c.h"

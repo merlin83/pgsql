@@ -6,10 +6,13 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/copy.c,v 1.5 1996-08-26 06:30:21 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/copy.c,v 1.6 1996-08-27 07:42:22 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
+
+#include "config.h"
+
 #include <stdio.h>
 #include <sys/types.h>	/* for mode_t */
 #include <sys/stat.h>	/* for umask(2) prototype */
