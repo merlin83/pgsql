@@ -9,7 +9,7 @@
  * Portions Copyright (c) 1996-2003, PostgreSQL Global Development Group
  * Portions Copyright (c) 1994, Regents of the University of California
  *
- * $Id: typcache.h,v 1.1 2003-08-17 19:58:06 tgl Exp $
+ * $Id: typcache.h,v 1.1.2.1 2003-09-07 04:37:09 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */

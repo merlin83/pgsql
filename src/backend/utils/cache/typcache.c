@@ -33,7 +33,7 @@
  * Portions Copyright (c) 1994, Regents of the University of California
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/cache/typcache.c,v 1.1 2003-08-17 19:58:06 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/cache/typcache.c,v 1.1.2.1 2003-09-07 04:36:55 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
