@@ -3,7 +3,7 @@
  *
  * Copyright 2000 by PostgreSQL Global Development Group
  *
- * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/input.c,v 1.24 2003-07-23 08:47:39 petere Exp $
+ * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/input.c,v 1.25 2003-07-25 19:27:06 momjian Exp $
  */
 #include "postgres_fe.h"
 #include "input.h"
@@ -86,7 +86,8 @@ gets_interactive(const char *prompt)
 	static char *prev_hist = NULL;
 
 	if (useReadline)
-		s = readline(prompt);
+		/* On some platforms, readline is declared as readline(char *) */
+		s = readline((char *) prompt);
 	else
 		s = gets_basic(prompt);
 
