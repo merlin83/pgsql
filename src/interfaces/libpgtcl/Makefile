@@ -7,12 +7,12 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpgtcl/Attic/Makefile,v 1.14 1997-09-16 18:47:19 momjian Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpgtcl/Attic/Makefile,v 1.15 1997-09-23 00:02:44 momjian Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR= ../..
-:nclude $(SRCDIR)/Makefile.global
+include $(SRCDIR)/Makefile.global
 
 INCLUDE_OPT= \
              -I$(SRCDIR)/backend \
