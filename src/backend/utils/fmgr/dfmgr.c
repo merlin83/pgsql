@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/fmgr/dfmgr.c,v 1.29 1999-07-16 05:23:23 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/fmgr/dfmgr.c,v 1.30 1999-07-16 23:05:45 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -17,6 +17,8 @@
 #include <string.h>
 
 #include "postgres.h"
+
+#include "utils/dynamic_loader.h"
 
 #include "access/heapam.h"
 #include "catalog/catname.h"
