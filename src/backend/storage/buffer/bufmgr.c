@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/buffer/bufmgr.c,v 1.145 2003-11-19 15:55:07 wieck Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/buffer/bufmgr.c,v 1.146 2003-11-21 17:41:31 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -1025,7 +1025,7 @@ BufferBackgroundWriter(void)
 	 */
 	for (;;)
 	{
-		int			n, i;
+		int			n;
 
 		/*
 		 * Call BufferSync() with instructions to keep just the
