@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: parsenodes.h,v 1.1.1.1 1996-07-09 06:21:33 scrappy Exp $
+ * $Id: parsenodes.h,v 1.3 1996-08-06 16:37:53 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -462,6 +462,7 @@ typedef struct CursorStmt {
     List		*targetList;	/* the target list (of ResTarget) */
     List		*fromClause;	/* the from clause */
     Node		*whereClause;	/* qualifications */
+    List              *groupClause;   /* group by clause */
     List		*orderClause;	/* sort clause (a list of SortBy's) */
 } CursorStmt;    
 
@@ -630,6 +631,7 @@ typedef struct RelExpr {
  */
 typedef struct SortBy {
     NodeTag		type;
+    char                *range;
     char		*name;		/* name of column to sort on */
     char		*useOp;		/* operator to use */
 } SortBy;

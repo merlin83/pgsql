@@ -7,7 +7,7 @@
  * Copyright (c) 1994, Regents of the University of California
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/bootstrap/bootstrap.c,v 1.4 1996-07-23 02:23:05 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/bootstrap/bootstrap.c,v 1.6 1996-08-17 06:41:10 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -187,15 +187,11 @@ typedef void (*sig_func)();
  *	error handling / abort routines
  * ----------------
  */
-# if !defined(PORTNAME_BSD44_derived) && \
-     !defined(PORTNAME_bsdi) && \
-     !defined(PORTNAME_bsdi_2_1)
-void err()
+void err_out()
 {
     Warnings++;
     cleanup();
 }
-#endif
 
 /* usage:
    usage help for the bootstrap backen
@@ -747,7 +743,7 @@ gettype(char *type)
         return(gettype(type));
     }
     elog(WARN, "Error: unknown type '%s'.\n", type);
-    err();
+    err_out();
     /* not reached, here to make compiler happy */
     return 0;
 }

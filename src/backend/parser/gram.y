@@ -10,7 +10,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/gram.y,v 1.2 1996-07-23 02:23:33 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/gram.y,v 1.7 1996-08-15 07:42:29 scrappy Exp $
  *
  * HISTORY
  *    AUTHOR		DATE		MAJOR EVENT
@@ -109,8 +109,8 @@ static Node *makeA_Expr(int op, char *opname, Node *lexpr, Node *rexpr);
 	ExplainStmt
 
 %type <str>	relation_name, copy_file_name, copy_delimiter, def_name,
-	database_name, access_method, attr_name, class, index_name,
-	var_name, name, file_name, recipe_name
+	database_name, access_method_clause, access_method, attr_name,
+	class, index_name, var_name, name, file_name, recipe_name
 
 %type <str>	opt_id, opt_portal_name,
 	before_clause, after_clause, all_Op, MathOp, opt_name, opt_unique
@@ -173,7 +173,7 @@ static Node *makeA_Expr(int op, char *opname, Node *lexpr, Node *rexpr);
 	CURSOR, DATABASE, DECLARE, DELETE, DELIMITERS, DESC, DISTINCT, DO,
 	DROP, END_TRANS,
 	EXTEND, FETCH, FOR, FORWARD, FROM, FUNCTION, GRANT, GROUP, 
-	HAVING, HEAVY, IN, INDEX, INHERITS, INSERT, INSTEAD, INTO, 
+	HAVING, HEAVY, IN, INDEX, INHERITS, INSERT, INSTEAD, INTO, IS,
 	ISNULL, LANGUAGE, LIGHT, LISTEN, LOAD, MERGE, MOVE, NEW, 
 	NONE, NOT, NOTHING, NOTIFY, NOTNULL, 
         ON, OPERATOR, OPTION, OR, ORDER, 
@@ -201,6 +201,7 @@ static Node *makeA_Expr(int op, char *opname, Node *lexpr, Node *rexpr);
 %nonassoc Op
 %nonassoc NOTNULL
 %nonassoc ISNULL
+%nonassoc IS
 %left  	'+' '-'
 %left  	'*' '/'
 %left	'|'		/* this is the relation union op, not logical or */
@@ -652,20 +653,24 @@ opt_portal_name: IN name			{ $$ = $2;}
  *****************************************************************************/
 
 IndexStmt:  CREATE INDEX index_name ON relation_name
-	    USING access_method '(' index_params ')'
+	    access_method_clause '(' index_params ')'
 		{
 		    /* should check that access_method is valid,
 		       etc ... but doesn't */
 		    IndexStmt *n = makeNode(IndexStmt);
 		    n->idxname = $3;
 		    n->relname = $5;
-		    n->accessMethod = $7;
-		    n->indexParams = $9;
+		    n->accessMethod = $6;
+		    n->indexParams = $8;
 		    n->withClause = NIL;
 		    n->whereClause = NULL;
 		    $$ = (Node *)n;
 		}
 	;
+
+access_method_clause:   USING access_method      { $$ = $2; }
+		      | /* empty -- 'btree' is default access method */
+						 { $$ = "btree"; }
 
 /*****************************************************************************
  *
@@ -1349,7 +1354,7 @@ ReplaceStmt:  UPDATE relation_name
 
 CursorStmt:  DECLARE name opt_binary CURSOR FOR 
 	     SELECT opt_unique res_target_list2	
-	     from_clause where_clause sort_clause
+	     from_clause where_clause group_clause sort_clause
 		{
 		    CursorStmt *n = makeNode(CursorStmt);
 
@@ -1370,7 +1375,8 @@ CursorStmt:  DECLARE name opt_binary CURSOR FOR
 		    n->targetList = $8;
 		    n->fromClause = $9;
 		    n->whereClause = $10;
-		    n->orderClause = $11;
+		    n->groupClause = $11;
+		    n->orderClause = $12;
 		    $$ = (Node *)n;
 		}
 	;
@@ -1425,12 +1431,20 @@ sortby_list:  sortby
 sortby:  Id OptUseOp
 		{ 
 		    $$ = makeNode(SortBy);
+		    $$->range = NULL;
 		    $$->name = $1;
 		    $$->useOp = $2;
 		}
-	| attr OptUseOp
+	| Id '.' Id OptUseOp
+		{
+		    $$ = makeNode(SortBy);
+		    $$->range = $1;
+		    $$->name = $3;
+		    $$->useOp = $4;
+		}
+        | /*EMPTY*/
                 { 
-                  yyerror("parse error: use 'sort by attribute_name'");
+                  yyerror("parse error: use 'order by attribute_name'");
                 }
 	;
 
@@ -1805,7 +1819,11 @@ a_expr:  attr opt_indirection
 		}
 	| a_expr ISNULL
 		{   $$ = makeA_Expr(ISNULL, NULL, $1, NULL); }
+	| a_expr IS PNULL
+		{   $$ = makeA_Expr(ISNULL, NULL, $1, NULL); }
 	| a_expr NOTNULL
+		{   $$ = makeA_Expr(NOTNULL, NULL, $1, NULL); }
+	| a_expr IS NOT PNULL
 		{   $$ = makeA_Expr(NOTNULL, NULL, $1, NULL); }
 	| a_expr AND a_expr
 		{   $$ = makeA_Expr(AND, NULL, $1, $3); }
@@ -2098,7 +2116,7 @@ xlateSqlType(char *name)
 	return "int2";
     else if (!strcasecmp(name, "float") ||
 	     !strcasecmp(name, "real"))
-	return "float4";
+	return "float8";
     else
 	return name;
 }
