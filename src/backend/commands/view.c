@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/view.c,v 1.4 1996-11-06 08:21:43 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/view.c,v 1.5 1996-11-10 02:59:45 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -27,6 +27,7 @@
 #include <rewrite/rewriteManip.h>
 #include <rewrite/rewriteRemove.h>
 #include <commands/creatinh.h>
+#include <commands/view.h>
 
 /*---------------------------------------------------------------------
  * DefineVirtualRelation

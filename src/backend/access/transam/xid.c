@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/transam/Attic/xid.c,v 1.4 1996-11-05 11:12:33 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/transam/Attic/xid.c,v 1.5 1996-11-10 02:59:19 momjian Exp $
  *
  * OLD COMMENTS
  * XXX WARNING
@@ -23,6 +23,7 @@
 #include <stdio.h>
 
 #include <postgres.h>
+#include <access/xact.h>
 
 extern TransactionId NullTransactionId;
 extern TransactionId DisabledTransactionId;

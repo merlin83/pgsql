@@ -7,13 +7,14 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/rtree/Attic/rtproc.c,v 1.4 1996-11-05 10:54:17 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/rtree/Attic/rtproc.c,v 1.5 1996-11-10 02:58:53 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 
 #include <postgres.h>
 
+#include <utils/builtins.h>
 #include <utils/geo-decls.h>
 #ifndef HAVE_MEMMOVE
 # include <regex/utils.h>
