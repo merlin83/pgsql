@@ -229,7 +229,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/Attic/gram.c,v 2.45 1998-10-13 17:26:41 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/Attic/gram.c,v 2.46 1998-10-14 15:57:25 thomas Exp $
  *
  * HISTORY
  *	  AUTHOR			DATE			MAJOR EVENT
