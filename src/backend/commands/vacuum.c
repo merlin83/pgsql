@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/vacuum.c,v 1.54 1997-12-17 04:44:50 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/vacuum.c,v 1.55 1997-12-19 02:05:33 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -54,7 +54,7 @@
 #include <sys/resource.h>
 #endif
 
-/* #include <port-protos.h> */
+/* #include <port-protos.h> */ /* Why? */
 
 extern int BlowawayRelationBuffers(Relation rdesc, BlockNumber block);
 
