@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeUnique.c,v 1.2 1996-07-19 06:27:59 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeUnique.c,v 1.3 1996-10-31 10:12:26 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -22,6 +22,8 @@
  *	sorted order.
  *
  */
+#include "postgres.h"
+
 #include "executor/executor.h"
 #include "executor/nodeUnique.h"
 #include "optimizer/clauses.h"

@@ -11,7 +11,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/execProcnode.c,v 1.1.1.1 1996-07-09 06:21:25 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/execProcnode.c,v 1.2 1996-10-31 10:11:27 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -72,6 +72,8 @@
  *	in turn call these routines themselves on their subplans.
  *
  */
+#include "postgres.h"
+
 #include "executor/executor.h"
 #include "executor/nodeResult.h"
 #include "executor/nodeAppend.h"
