@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/dgux/Attic/dynloader.c,v 1.3 1997-09-08 02:26:05 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/dynloader/dgux.c,v 1.1 1997-12-20 04:48:02 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
