@@ -7,13 +7,13 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/pg_id/Attic/Makefile,v 1.3 1996-11-12 06:10:10 bryanh Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/pg_id/Attic/Makefile,v 1.4 1997-02-06 02:31:25 momjian Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR= ../..
-include ../Makefile.global
 include ../../Makefile.global
+include ../Makefile.global
 
 OBJS= pg_id.o
 
