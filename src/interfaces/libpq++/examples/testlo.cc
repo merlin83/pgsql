@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq++/examples/Attic/testlo.cc,v 1.1.1.1 1996-07-09 06:22:19 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq++/examples/Attic/testlo.cc,v 1.2 1996-11-18 01:44:28 bryanh Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -22,7 +22,6 @@ main(int argc, char **argv)
 {
     char *in_filename, *out_filename;
     char *database;
-    Oid lobjOid;
     PGenv env;
     PGlobj *object;
 
