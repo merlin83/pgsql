@@ -8,14 +8,13 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/fmgr/dfmgr.c,v 1.56 2002-06-20 20:29:39 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/fmgr/dfmgr.c,v 1.57 2002-09-02 02:47:05 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include "postgres.h"
 
 #include <errno.h>
-#include <sys/types.h>
 #include <sys/stat.h>
 
 #include "dynloader.h"
