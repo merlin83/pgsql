@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/dynloader/ultrix4.c,v 1.13 2001-02-10 02:31:26 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/dynloader/ultrix4.c,v 1.14 2002-03-06 06:09:59 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -55,10 +55,10 @@ pg_dlopen(char *filename)
 		/* list the undefined symbols, if any */
 		if (count)
 		{
-			elog(NOTICE, "dl: Undefined:");
+			elog(WARNING, "dl: Undefined:");
 			while (*list)
 			{
-				elog(NOTICE, "  %s", *list);
+				elog(WARNING, "  %s", *list);
 				list++;
 			}
 		}
