@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/keywords.c,v 1.85 2000-11-14 18:37:49 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/keywords.c,v 1.86 2000-12-15 23:36:19 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -78,8 +78,6 @@ static ScanKeyword ScanKeywords[] = {
 	{"createdb", CREATEDB},
 	{"createuser", CREATEUSER},
 	{"cross", CROSS},
-	/* for portability with old rules bjm 2000-06-12 */
-	{"current", OLD},
 	{"current_date", CURRENT_DATE},
 	{"current_time", CURRENT_TIME},
 	{"current_timestamp", CURRENT_TIMESTAMP},
