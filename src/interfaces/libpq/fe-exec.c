@@ -7,10 +7,13 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-exec.c,v 1.54 1998-06-16 07:29:48 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-exec.c,v 1.55 1998-07-03 04:24:13 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
+#ifdef WIN32
+#include "win32.h"
+#endif
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
