@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/Attic/freefuncs.c,v 1.5 1999-02-10 03:52:35 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/Attic/freefuncs.c,v 1.6 1999-02-10 21:02:33 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -714,7 +714,7 @@ _freeArrayRef(ArrayRef *node)
  * ----------------
  */
 static void
-_freeRelOptInfo(RelOptInfo * node)
+_freeRelOptInfo(RelOptInfo *node)
 {
 	/* ----------------
 	 *	free remainder of node
