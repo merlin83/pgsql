@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/misc/superuser.c,v 1.10 1999-07-16 05:23:27 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/misc/superuser.c,v 1.11 1999-11-22 17:56:35 momjian Exp $
  *
  * DESCRIPTION
  *	  See superuser().
@@ -30,7 +30,7 @@ superuser(void)
 
 	HeapTuple	utup;
 
-	utup = SearchSysCacheTuple(USENAME,
+	utup = SearchSysCacheTuple(USERNAME,
 							   PointerGetDatum(UserName),
 							   0, 0, 0);
 	Assert(utup != NULL);
