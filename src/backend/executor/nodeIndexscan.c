@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeIndexscan.c,v 1.6 1997-01-22 05:26:50 vadim Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeIndexscan.c,v 1.7 1997-03-12 20:58:26 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -905,7 +905,7 @@ ExecInitIndexScan(IndexScan *node, EState *estate, Plan *parent)
     for (i=0; i < numIndices; i++) {
 	Oid 	indexOid;
 	
-	indexOid =  (Oid)nth(i, indxid);
+	indexOid =  (Oid)nthi(i, indxid);
 	
 	if (indexOid != 0) {
 	    ExecOpenScanR(indexOid, 		  /* relation */
