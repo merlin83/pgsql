@@ -1,11 +1,11 @@
 /* ----------
- * numeric.h -
+ * numeric.h
  *
  *	Definitions for the exact numeric data type of Postgres
  *
  *	1998 Jan Wieck
  *
- * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/include/utils/numeric.h,v 1.3 1999-01-05 11:12:11 wieck Exp $
+ * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/include/utils/numeric.h,v 1.4 1999-02-13 23:22:26 momjian Exp $
  *
  * ----------
  */

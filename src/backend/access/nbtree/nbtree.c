@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------------
  *
- * btree.c--
+ * btree.c
  *	  Implementation of Lehman and Yao's btree management algorithm for
  *	  Postgres.
  *
@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/nbtree.c,v 1.34 1998-11-27 19:51:40 vadim Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/nbtree.c,v 1.35 1999-02-13 23:14:36 momjian Exp $
  *
  * NOTES
  *	  This file contains only the public interface routines.

@@ -1,13 +1,13 @@
 /*-------------------------------------------------------------------------
  *
- * beard.c--
+ * beard.c
  *	  sample routines to use large objects
  *
  * Copyright (c) 1994, Regents of the University of California
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/tutorial/Attic/beard.c,v 1.1 1998-03-01 04:51:01 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/tutorial/Attic/beard.c,v 1.2 1999-02-13 23:22:47 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
