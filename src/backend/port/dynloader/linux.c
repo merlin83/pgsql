@@ -10,7 +10,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/dynloader/linux.c,v 1.1 1997-12-20 02:36:17 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/dynloader/linux.c,v 1.2 1997-12-20 04:13:31 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -19,7 +19,7 @@
 #include <dld.h>
 #endif
 #include "postgres.h"
-#include "port-protos.h"
+#include "dynloader.h"
 #include "utils/elog.h"
 #include "fmgr.h"
 
