@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/ipc/Attic/spin.c,v 1.1.1.1 1996-07-09 06:21:55 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/ipc/Attic/spin.c,v 1.2 1996-11-03 05:07:02 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -30,7 +30,6 @@
 #include "storage/shmem.h"
 #include "storage/spin.h"
 #include "storage/proc.h"
-#include "utils/elog.h"
 
 /* globals used in this file */
 IpcSemaphoreId	SpinLockId;
