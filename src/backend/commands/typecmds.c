@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/typecmds.c,v 1.44 2003-09-09 23:22:19 petere Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/typecmds.c,v 1.45 2003-09-15 00:26:31 petere Exp $
  *
  * DESCRIPTION
  *	  The "DefineFoo" routines take the parse tree and pick out the
@@ -1246,10 +1246,6 @@ AlterDomainNotNull(List *names, bool notNull)
 	/* Is the domain already set to the desired constraint? */
 	if (typTup->typnotnull == notNull)
 	{
-		ereport(NOTICE,
-				(errmsg("\"%s\" is already set to %s",
-						TypeNameToString(typename),
-						notNull ? "NOT NULL" : "NULL")));
 		heap_close(typrel, RowExclusiveLock);
 		return;
 	}
