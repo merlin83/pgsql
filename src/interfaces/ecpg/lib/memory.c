@@ -1,4 +1,4 @@
-/* $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/ecpg/lib/Attic/memory.c,v 1.4 2001-08-24 14:07:49 petere Exp $ */
+/* $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/ecpg/lib/Attic/memory.c,v 1.5 2001-09-19 14:09:32 meskes Exp $ */
 
 #include "postgres_fe.h"
 
