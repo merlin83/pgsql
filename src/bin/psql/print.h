@@ -1,9 +1,9 @@
 /*
  * psql - the PostgreSQL interactive terminal
  *
- * Copyright 2000 by PostgreSQL Global Development Group
+ * Copyright (c) 2000-2003, PostgreSQL Global Development Group
  *
- * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/print.h,v 1.18 2003-08-04 00:43:29 momjian Exp $
+ * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/print.h,v 1.19 2003-08-04 23:59:40 tgl Exp $
  */
 #ifndef PRINT_H
 #define PRINT_H
