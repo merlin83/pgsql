@@ -1,5 +1,0 @@
-
-CREATE TRIGGER "MyTableName_Trig" AFTER INSERT OR DELETE OR UPDATE
-ON "MyTableName"  FOR EACH ROW EXECUTE PROCEDURE
-"recordchange" ();
-
