@@ -7,12 +7,12 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/lib/Attic/fstack.c,v 1.12 1999-07-15 23:03:11 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/lib/Attic/fstack.c,v 1.13 1999-07-16 04:58:55 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
-#include "postgres.h"
 
+#include "postgres.h"
 #include "lib/fstack.h"
 
 /*

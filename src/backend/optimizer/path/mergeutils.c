@@ -7,16 +7,16 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/path/Attic/mergeutils.c,v 1.23 1999-07-15 22:39:24 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/path/Attic/mergeutils.c,v 1.24 1999-07-16 04:59:15 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include "postgres.h"
 
 
-#include "optimizer/paths.h"
 #include "optimizer/clauses.h"
 #include "optimizer/ordering.h"
+#include "optimizer/paths.h"
 
 /*
  * group_clauses_by_order

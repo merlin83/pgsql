@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/ipc/ipci.c,v 1.28 1999-07-16 03:13:34 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/ipc/ipci.c,v 1.29 1999-07-16 04:59:44 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -16,9 +16,9 @@
 
 #include "postgres.h"
 
-#include "storage/sinval.h"
-#include "storage/bufmgr.h"
 #include "miscadmin.h"
+#include "storage/bufmgr.h"
+#include "storage/sinval.h"
 
 /*
  * SystemPortAddressCreateMemoryKey

@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeHashjoin.c,v 1.24 1999-07-16 03:12:52 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeHashjoin.c,v 1.25 1999-07-16 04:58:49 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */

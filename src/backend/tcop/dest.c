@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/dest.c,v 1.34 1999-07-16 03:13:49 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/dest.c,v 1.35 1999-07-16 04:59:51 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -37,12 +37,9 @@
 
 #include "postgres.h"
 
+#include "access/printtup.h"
 #include "libpq/libpq.h"
 #include "libpq/pqformat.h"
-#include "access/printtup.h"
-
-
-
 
 
 static char CommandInfo[32] = {0};

@@ -7,17 +7,13 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/pquery.c,v 1.25 1999-07-15 22:39:57 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/pquery.c,v 1.26 1999-07-16 04:59:55 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include <string.h>
 
 #include "postgres.h"
-
-
-
-
 
 #include "executor/execdefs.h"
 #include "executor/executor.h"

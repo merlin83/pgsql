@@ -8,14 +8,14 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/lib/Attic/hasht.c,v 1.10 1999-07-15 23:03:12 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/lib/Attic/hasht.c,v 1.11 1999-07-16 04:58:56 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include "postgres.h"
 
-#include "utils/memutils.h"
 #include "lib/hasht.h"
+#include "utils/memutils.h"
 
 /* -----------------------------------
  *		HashTableWalk

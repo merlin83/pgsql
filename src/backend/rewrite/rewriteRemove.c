@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/rewrite/rewriteRemove.c,v 1.26 1999-07-16 03:13:23 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/rewrite/rewriteRemove.c,v 1.27 1999-07-16 04:59:41 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -17,13 +17,13 @@
 #include "postgres.h"
 
 
+
 #include "access/heapam.h"
 #include "catalog/catname.h"
 #include "catalog/pg_rewrite.h"
-#include "utils/syscache.h"
-
 #include "rewrite/rewriteRemove.h"
 #include "rewrite/rewriteSupport.h"
+#include "utils/syscache.h"
 
 /*-----------------------------------------------------------------------
  * RewriteGetRuleEventRel
