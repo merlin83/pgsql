@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/sequence.c,v 1.89 2002-11-10 00:10:20 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/sequence.c,v 1.90 2002-11-11 22:19:21 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -193,6 +193,7 @@ DefineSequence(CreateSeqStmt *seq)
 	stmt->inhRelations = NIL;
 	stmt->constraints = NIL;
 	stmt->hasoids = false;
+	stmt->oncommit = ONCOMMIT_NOOP;
 
 	seqoid = DefineRelation(stmt, RELKIND_SEQUENCE);
 
