@@ -7,15 +7,15 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/Attic/nbtstrat.c,v 1.9 1999-07-15 22:38:49 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/Attic/nbtstrat.c,v 1.10 1999-07-15 23:03:01 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 
-#include <postgres.h>
+#include "postgres.h"
 
-#include <access/istrat.h>
-#include <access/nbtree.h>
+#include "access/istrat.h"
+#include "access/nbtree.h"
 
 /*
  * Note:

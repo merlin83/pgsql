@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/hash/hashpage.c,v 1.21 1999-07-15 22:38:37 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/hash/hashpage.c,v 1.22 1999-07-15 23:02:55 momjian Exp $
  *
  * NOTES
  *	  Postgres hash pages look like ordinary relation pages.  The opaque
@@ -23,11 +23,11 @@
  *-------------------------------------------------------------------------
  */
 
-#include <postgres.h>
+#include "postgres.h"
 
-#include <access/hash.h>
-#include <miscadmin.h>
-#include <access/genam.h>
+#include "access/hash.h"
+#include "miscadmin.h"
+#include "access/genam.h"
 
 #ifndef HAVE_MEMMOVE
 #else
