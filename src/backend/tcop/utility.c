@@ -9,7 +9,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/utility.c,v 1.41 1998-06-15 19:29:27 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/utility.c,v 1.42 1998-06-16 02:53:26 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -74,7 +74,7 @@ if (1) \
 	if (IsAbortedTransactionBlockState()) \
 	{ \
 		elog(NOTICE, "(transaction aborted): %s", \
-			 "queries ignored until END"); \
+			 "all queries ignored until end of transaction block"); \
 		commandTag = "*ABORT STATE*"; \
 		break; \
 	} \
