@@ -11,11 +11,12 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/execScan.c,v 1.2 1996-10-31 10:11:34 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/execScan.c,v 1.3 1997-07-28 00:53:51 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 
+#include <sys/types.h>
 #include <sys/file.h>
 #include "postgres.h"
 

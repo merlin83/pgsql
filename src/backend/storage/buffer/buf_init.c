@@ -7,10 +7,11 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/buffer/buf_init.c,v 1.9 1997-04-18 02:53:15 vadim Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/buffer/buf_init.c,v 1.10 1997-07-28 00:54:33 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
+#include <sys/types.h>
 #include <sys/file.h>
 #include <stdio.h>
 #include <math.h>

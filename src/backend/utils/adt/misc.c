@@ -7,10 +7,11 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/misc.c,v 1.6 1997-04-27 19:20:14 thomas Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/misc.c,v 1.7 1997-07-28 00:55:58 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
+#include <sys/types.h>
 #include <sys/file.h>
 #include "postgres.h"
 #include "utils/datum.h"
