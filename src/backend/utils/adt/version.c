@@ -5,14 +5,13 @@
  *
  * IDENTIFICATION
  *
- * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/version.c,v 1.9 1999-07-17 20:18:00 momjian Exp $
+ * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/version.c,v 1.10 2000-07-02 15:20:51 petere Exp $
  *
  *-------------------------------------------------------------------------
  */
 
 
 #include "postgres.h"
-#include "version.h"
 
 
 text	   *version(void);
