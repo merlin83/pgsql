@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/keywords.c,v 1.130 2002-11-13 00:44:09 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/keywords.c,v 1.131 2002-11-15 02:50:08 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -314,6 +314,7 @@ static const ScanKeyword ScanKeywords[] = {
 	{"vacuum", VACUUM},
 	{"valid", VALID},
 	{"validator", VALIDATOR},
+	{"value", VALUE},
 	{"values", VALUES},
 	{"varchar", VARCHAR},
 	{"varying", VARYING},
