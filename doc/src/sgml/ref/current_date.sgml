@@ -1,3 +1,13 @@
+<!--
+$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/ref/Attic/current_date.sgml,v 1.4 1999-07-22 15:09:09 thomas Exp $
+Postgres documentation
+-->
+
+<!--
+$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/src/sgml/ref/Attic/current_date.sgml,v 1.4 1999-07-22 15:09:09 thomas Exp $
+Postgres documentation
+-->
+
 <REFENTRY ID="SQL-CURRENT-DATE">
  <REFMETA>
   <REFENTRYTITLE>
