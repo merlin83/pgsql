@@ -1,8 +1,0 @@
-ifdef LINUX_ELF
-LDFLAGS+= -rdynamic
-endif
-MK_NO_LORDER= true
-
-%.so: %.o
-	$(CC) -shared -o $@ $<
-
