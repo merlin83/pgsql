@@ -4,7 +4,7 @@
 #    Makefile for pgeasy examples
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/pgeasy/examples/Attic/Makefile,v 1.1 1999-10-11 17:47:02 momjian Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpgeasy/examples/Attic/Makefile,v 1.1 1999-10-11 18:03:01 momjian Exp $
 #
 #-------------------------------------------------------------------------
 
