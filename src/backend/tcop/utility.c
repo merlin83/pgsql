@@ -9,7 +9,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/utility.c,v 1.27 1997-10-28 14:57:24 vadim Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/utility.c,v 1.28 1997-11-07 06:38:51 thomas Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -569,7 +569,7 @@ ProcessUtility(Node * parsetree,
 
 				commandTag = "CREATEDB";
 				CHECK_IF_ABORTED();
-				createdb(stmt->dbname);
+				createdb(stmt->dbname, stmt->dbpath);
 			}
 			break;
 
