@@ -7,12 +7,11 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq++/Attic/Makefile,v 1.2 1996-11-12 11:42:24 bryanh Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq++/Attic/Makefile,v 1.3 1996-11-13 10:35:39 bryanh Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR= ..
-LIBPQDIR= $(SRCDIR)/libpq
 include ../Makefile.global
 
 CXXFLAGS= $(CFLAGS)

@@ -4,12 +4,11 @@
 #    Makefile for tutorial
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/tutorial/Makefile,v 1.2 1996-11-12 11:43:20 bryanh Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/tutorial/Makefile,v 1.3 1996-11-13 10:36:24 bryanh Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR= ..
-LIBPQDIR= $(SRCDIR)/libpq
 include ../Makefile.global
 
 CFLAGS+= -I$(LIBPQDIR) -I../../include
