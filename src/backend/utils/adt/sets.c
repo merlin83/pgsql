@@ -10,7 +10,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/Attic/sets.c,v 1.44 2002-05-18 13:47:59 petere Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/Attic/sets.c,v 1.45 2002-05-22 17:21:00 petere Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -58,6 +58,7 @@ SetDefine(char *querystr, Oid elemType)
 							 true,		/* returnsSet */
 							 elemType,	/* returnType */
 							 SQLlanguageId,	/* language */
+							 SQLvalidatorId,
 							 querystr,	/* prosrc */
 							 fileName,	/* probin */
 							 false,		/* not aggregate */
