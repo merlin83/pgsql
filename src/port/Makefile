@@ -7,7 +7,7 @@
 # with broken/missing library files.
 
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/port/Makefile,v 1.4 2003-06-14 14:35:42 momjian Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/port/Makefile,v 1.5 2003-08-08 02:55:08 momjian Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -23,7 +23,7 @@ libpgport.a: $(LIBOBJS)
 	$(AR) crs $@ $^
 
 thread.o: thread.c
-	$(CC) $(CFLAGS) $(THREAD_CFLAGS) -c thread.c
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(THREAD_CFLAGS) -c thread.c
 
 clean distclean maintainer-clean:
 	rm -f libpgport.a $(LIBOBJS)
