@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/plan/planmain.c,v 1.9 1997-12-18 03:03:38 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/plan/planmain.c,v 1.10 1997-12-18 12:30:44 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -200,8 +200,7 @@ query_planner(Query *root,
 	 */
 	if (root->qry_aggs)
 	{
-		aggplan = make_agg(tlist, root->qry_numAgg, root->qry_aggs);
-		aggplan->plan.lefttree = subplan;
+		aggplan = make_agg(tlist, root->qry_numAgg, root->qry_aggs, subplan);
 
 		/*
 		 * set the varno/attno entries to the appropriate references to
