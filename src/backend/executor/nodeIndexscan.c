@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeIndexscan.c,v 1.69 2002-06-20 20:29:28 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeIndexscan.c,v 1.70 2002-06-23 21:29:32 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -516,6 +516,10 @@ ExecEndIndexScan(IndexScan *node)
 	 */
 	ExecClearTuple(scanstate->cstate.cs_ResultTupleSlot);
 	ExecClearTuple(scanstate->css_ScanTupleSlot);
+	pfree(scanstate);
+	pfree(indexstate->iss_RelationDescs);
+	pfree(indexstate->iss_ScanDescs);
+	pfree(indexstate);
 }
 
 /* ----------------------------------------------------------------
