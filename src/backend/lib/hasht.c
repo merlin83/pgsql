@@ -8,11 +8,11 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/lib/Attic/hasht.c,v 1.1.1.1 1996-07-09 06:21:29 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/lib/Attic/hasht.c,v 1.2 1996-10-31 10:26:32 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
-#include "c.h"
+#include "postgres.h"
 #include "utils/memutils.h"
 #include "utils/elog.h"
 #include "utils/hsearch.h"
