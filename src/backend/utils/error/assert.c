@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/assert.c,v 1.5 1997-09-07 04:53:11 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/assert.c,v 1.6 1997-09-08 02:31:25 momjian Exp $
  *
  * NOTE
  *	  This should eventually work with elog(), dlog(), etc.
@@ -28,8 +28,8 @@ ExceptionalCondition(char *conditionName,
 					 char *fileName,
 					 int lineNumber)
 {
-	extern char    *ExcFileName;/* XXX */
-	extern Index	ExcLineNumber;		/* XXX */
+	extern char *ExcFileName;	/* XXX */
+	extern Index ExcLineNumber; /* XXX */
 
 	ExcFileName = fileName;
 	ExcLineNumber = lineNumber;
