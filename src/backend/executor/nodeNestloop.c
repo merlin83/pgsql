@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeNestloop.c,v 1.2 1996-10-31 10:12:14 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeNestloop.c,v 1.3 1996-11-08 05:56:15 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -20,6 +20,7 @@
 #include "postgres.h"
 
 #include "executor/executor.h"
+#include "executor/execdebug.h"
 #include "executor/nodeNestloop.h"
 #include "executor/nodeIndexscan.h"
 
