@@ -4,7 +4,7 @@
 #
 # Copyright (c) 1994, Regents of the University of California
 #
-# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/pg_dump/Makefile,v 1.20 2000-07-21 11:40:08 pjw Exp $
+# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/pg_dump/Makefile,v 1.21 2000-07-24 06:24:26 pjw Exp $
 #
 #-------------------------------------------------------------------------
 
