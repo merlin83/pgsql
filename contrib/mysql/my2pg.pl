@@ -36,14 +36,32 @@
 # SUCH DAMAGE.
 #
 # $My2pg: my2pg.pl,v 1.28 2001/12/06 19:32:20 fonin Exp $
-# $Id: my2pg.pl,v 1.12 2004-04-19 23:11:49 momjian Exp $
+# $Id: my2pg.pl,v 1.13 2004-04-19 23:18:12 momjian Exp $
+
+# Custom patch
+# Revision 1.9  2002/08/22 00:01:39  tgl
+# Add a bunch of pseudo-types to replace the behavior formerly associated
+# with OPAQUE, as per recent pghackers discussion.  I still want to do some
+# more work on the 'cstring' pseudo-type, but I'm going to commit the bulk
+# of the changes now before the tree starts shifting under me ...
 
 #
 # $Log: my2pg.pl,v $
-# Revision 1.12  2004-04-19 23:11:49  momjian
-# Update to my2pg 1.28, from:
+# Revision 1.13  2004-04-19 23:18:12  momjian
+# Update to my2pg version 1.28, add docs, update URL for newest version.
 #
-# 	http://www.omnistarinc.com/~fonin/downloads.php#my2pg
+# Create diff of custom changes Tom made to the utility for CREATE
+# FUNCTION.
+#
+# This will make moving this utility out of CVS easier.
+#
+# Revision 1.13  2004/04/19 23:18:12  momjian
+# Update to my2pg version 1.28, add docs, update URL for newest version.
+#
+# Create diff of custom changes Tom made to the utility for CREATE
+# FUNCTION.
+#
+# This will make moving this utility out of CVS easier.
 #
 # Revision 1.12  2004/04/19 23:11:49  momjian
 # Update to my2pg 1.28, from:
@@ -342,11 +360,11 @@ int2* $typename"."_in (char *str) {
 	    print LIBTYPES "\n * Types for table ".uc($table_name);
 	    print LIBTYPES "\n */\n";
 
-	    $types.="\nCREATE FUNCTION $typename"."_in (opaque)
+	    $types.="\nCREATE FUNCTION $typename"."_in (cstring)
 	RETURNS $typename
 	AS '$libtypename'
 	LANGUAGE 'c'
-	WITH (ISCACHABLE);\n";
+	WITH (ISSTRICT, ISCACHABLE);\n";
 
 # creating output function
 	    my $func_out="
@@ -396,11 +414,11 @@ bool $typename"."_ge(int2* a, int2* b) {
     return (*a>=*b);
 }\n";
 
-	    $types.="\nCREATE FUNCTION $typename"."_out (opaque)
-	RETURNS opaque
+	    $types.="\nCREATE FUNCTION $typename"."_out ($typename)
+	RETURNS cstring
 	AS '$libtypename'
 	LANGUAGE 'c'
-	WITH (ISCACHABLE);\n";
+	WITH (ISSTRICT, ISCACHABLE);\n";
 
 	    $types.="\nCREATE TYPE $typename (
 	internallength = 2,
@@ -542,7 +560,7 @@ $typesize* $typename"."_in (char *str) {
 	    print LIBTYPES "\n * Types for table ".uc($table_name);
 	    print LIBTYPES "\n */\n";
 
-	    $types.="\nCREATE FUNCTION $typename"."_in (opaque)
+	    $types.="\nCREATE FUNCTION $typename"."_in (cstring)
 	RETURNS $typename
 	AS '$libtypename'
 	LANGUAGE 'c';\n";
@@ -594,8 +612,8 @@ $typesize find_in_set($typesize *a, $typesize *b) {
 
 \n";
 
-	    $types.="\nCREATE FUNCTION $typename"."_out (opaque)
-	RETURNS opaque
+	    $types.="\nCREATE FUNCTION $typename"."_out ($typename)
+	RETURNS cstring
 	AS '$libtypename'
 	LANGUAGE 'c';\n";
 
@@ -767,7 +785,7 @@ close(LIBTYPES);
 
 open(MAKE,">Makefile");
 print MAKE "#
-# My2Pg \$Revision: 1.12 $ \translated dump
+# My2Pg \$Revision: 1.13 $ \translated dump
 # Makefile
 #
 
