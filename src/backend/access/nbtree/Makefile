@@ -4,14 +4,15 @@
 #    Makefile for access/nbtree
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/Makefile,v 1.2 1996-11-03 09:06:55 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/Makefile,v 1.3 1996-11-05 10:35:27 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 
 SRCDIR = ../../..
 include ../../../Makefile.global
 
-INCLUDE_OPT = -I../../port/$(PORTNAME) \
+INCLUDE_OPT = -I../.. \
+              -I../../port/$(PORTNAME) \
               -I../../../include
 
 CFLAGS+=$(INCLUDE_OPT)
