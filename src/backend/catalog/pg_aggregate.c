@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/pg_aggregate.c,v 1.7 1997-09-08 02:21:46 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/pg_aggregate.c,v 1.8 1997-09-08 21:42:22 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -268,7 +268,7 @@ AggregateCreate(char *aggName,
 }
 
 char	   *
-AggNameGetInitVal(char *aggName, Oid basetype, int xfuncno, bool * isNull)
+AggNameGetInitVal(char *aggName, Oid basetype, int xfuncno, bool *isNull)
 {
 	HeapTuple	tup;
 	Relation	aggRel;

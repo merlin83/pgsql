@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/Attic/aclchk.c,v 1.16 1997-09-08 20:56:53 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/Attic/aclchk.c,v 1.17 1997-09-08 21:47:48 momjian Exp $
  *
  * NOTES
  *	  See acl.h.
@@ -582,7 +582,7 @@ int32
 pg_func_ownercheck(char *usename,
 				   char *funcname,
 				   int nargs,
-				   Oid * arglist)
+				   Oid *arglist)
 {
 	HeapTuple	htp;
 	AclId		user_id,
