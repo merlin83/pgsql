@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/scansup.c,v 1.1.1.1 1996-07-09 06:21:41 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/parser/scansup.c,v 1.2 1996-07-23 02:23:35 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -134,7 +134,11 @@ scanstr(char *s)
 			}
 		    }
 		default:
-		    elog (WARN, "Bad escape sequence, s[i] = %d", s[i]);
+#ifdef ESCAPE_PATCH
+                    newStr[j] = s[i];
+#else
+                    elog (WARN, "Bad escape sequence, s[i] = %d", s[i]);
+#endif
 		} /* switch */
 	    } /* s[i] == '\\' */
 	    else
