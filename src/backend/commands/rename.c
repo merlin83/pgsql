@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/Attic/rename.c,v 1.4 1996-11-10 02:59:42 momjian Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/Attic/rename.c,v 1.5 1997-08-12 20:15:12 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -235,8 +235,8 @@ renamerel(char oldrelname[], char newrelname[])
     }
     
     /* rename the directory first, so if this fails the rename's not done */
-    (void) strcpy(oldpath, relpath(oldrelname));
-    (void) strcpy(newpath, relpath(newrelname));
+    strcpy(oldpath, relpath(oldrelname));
+    strcpy(newpath, relpath(newrelname));
     if (rename(oldpath, newpath) < 0)
 	elog(WARN, "renamerel: unable to rename file: %m");
     
