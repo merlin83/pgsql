@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/dest.c,v 1.13 1997-10-24 15:51:37 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/dest.c,v 1.14 1997-11-27 03:01:12 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -287,7 +287,6 @@ BeginCommand(char *pname,
 					pq_putint(attrs[i]->attlen, 2);
 				}
 			}
-			pq_flush();
 			break;
 
 		case Local:
