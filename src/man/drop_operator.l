@@ -1,9 +1,9 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/man/Attic/drop_operator.l,v 1.2 1996-12-11 00:27:41 momjian Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/man/Attic/drop_operator.l,v 1.3 1998-01-11 22:17:30 momjian Exp $
 .TH "DROP OPERATOR" SQL 11/05/95 PostgreSQL PostgreSQL
 .SH NAME
-drop operator \(em remove an operator from the system
+drop operator - remove an operator from the system
 .SH SYNOPSIS
 .nf
 \fBdrop operator\fR opr_desc

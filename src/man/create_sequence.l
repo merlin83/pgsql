@@ -1,9 +1,9 @@
 .\" This is -*-nroff-*-
 .\" XXX standard disclaimer belongs here....
-.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/man/Attic/create_sequence.l,v 1.2 1997-06-03 03:19:08 vadim Exp $
+.\" $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/man/Attic/create_sequence.l,v 1.3 1998-01-11 22:17:17 momjian Exp $
 .TH "CREATE SEQUENCE" SQL 04/01/97 PostgreSQL PostgreSQL
 .SH NAME
-create sequence \(em create a new sequence number generator
+create sequence - create a new sequence number generator
 .SH SYNOPSIS
 .nf
 \fBcreate sequence\fR seqname 
