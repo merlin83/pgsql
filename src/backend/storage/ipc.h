@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: ipc.h,v 1.1 1996-07-09 06:21:52 scrappy Exp $
+ * $Id: ipc.h,v 1.1.1.1 1996-07-09 06:21:52 scrappy Exp $
  *
  * NOTES
  *    This file is very architecture-specific.  This stuff should actually

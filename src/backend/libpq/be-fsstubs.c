@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/libpq/be-fsstubs.c,v 1.1 1996-07-09 06:21:30 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/libpq/be-fsstubs.c,v 1.1.1.1 1996-07-09 06:21:30 scrappy Exp $
  *
  * NOTES
  *    This should be moved to a more appropriate place.  It is here

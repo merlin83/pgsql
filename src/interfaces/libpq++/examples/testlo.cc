@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq++/examples/Attic/testlo.cc,v 1.1 1996-07-09 06:22:19 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq++/examples/Attic/testlo.cc,v 1.1.1.1 1996-07-09 06:22:19 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

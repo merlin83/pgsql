@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/heap/Attic/stats.c,v 1.1 1996-07-09 06:21:11 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/heap/Attic/stats.c,v 1.1.1.1 1996-07-09 06:21:11 scrappy Exp $
  *
  * NOTES
  *    initam should be moved someplace else.

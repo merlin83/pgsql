@@ -9,7 +9,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: pg_log.h,v 1.1 1996-07-09 06:21:17 scrappy Exp $
+ * $Id: pg_log.h,v 1.1.1.1 1996-07-09 06:21:17 scrappy Exp $
  *
  * NOTES
  *    The structures and macros used by the transam/ code

@@ -1,4 +1,4 @@
-$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/README,v 1.1 1996-07-09 06:21:15 scrappy Exp $
+$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/README,v 1.1.1.1 1996-07-09 06:21:15 scrappy Exp $
 
 This directory contains .c files that manipulate the system catalogs
 as well as .h files that define the structure of the system catalogs.

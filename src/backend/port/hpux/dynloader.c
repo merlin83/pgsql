@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/hpux/Attic/dynloader.c,v 1.1 1996-07-09 06:21:43 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/hpux/Attic/dynloader.c,v 1.1.1.1 1996-07-09 06:21:43 scrappy Exp $
  *
  *  NOTES
  *	all functions are defined here -- it's impossible to trace the 

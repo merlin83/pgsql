@@ -5,7 +5,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: pgtclCmds.h,v 1.1 1996-07-09 06:22:16 scrappy Exp $
+ * $Id: pgtclCmds.h,v 1.1.1.1 1996-07-09 06:22:16 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

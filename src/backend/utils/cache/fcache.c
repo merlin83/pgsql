@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/cache/Attic/fcache.c,v 1.1 1996-07-09 06:22:06 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/cache/Attic/fcache.c,v 1.1.1.1 1996-07-09 06:22:06 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

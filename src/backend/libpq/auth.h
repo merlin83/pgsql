@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: auth.h,v 1.1 1996-07-09 06:21:30 scrappy Exp $
+ * $Id: auth.h,v 1.1.1.1 1996-07-09 06:21:30 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

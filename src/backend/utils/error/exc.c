@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/Attic/exc.c,v 1.1 1996-07-09 06:22:07 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/Attic/exc.c,v 1.1.1.1 1996-07-09 06:22:07 scrappy Exp $
  *
  * NOTE
  *    XXX this code needs improvement--check for state violations and

@@ -9,7 +9,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/date.c,v 1.1 1996-07-09 06:22:03 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/date.c,v 1.1.1.1 1996-07-09 06:22:03 scrappy Exp $
  *
  * NOTES
  *   This code is actually (almost) unused.

@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/assert.c,v 1.1 1996-07-09 06:22:07 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/assert.c,v 1.1.1.1 1996-07-09 06:22:07 scrappy Exp $
  *
  * NOTE
  *    This should eventually work with elog(), dlog(), etc.

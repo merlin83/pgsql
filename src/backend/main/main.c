@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/main/main.c,v 1.1 1996-07-09 06:21:32 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/main/main.c,v 1.1.1.1 1996-07-09 06:21:32 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

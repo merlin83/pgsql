@@ -27,7 +27,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/mk/Attic/postgres.user.mk,v 1.1 1996-07-09 06:22:19 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/mk/Attic/postgres.user.mk,v 1.1.1.1 1996-07-09 06:22:19 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 

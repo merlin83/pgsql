@@ -7,7 +7,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/Makefile,v 1.1 1996-07-09 06:21:08 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/Makefile,v 1.1.1.1 1996-07-09 06:21:08 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 

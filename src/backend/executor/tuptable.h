@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: tuptable.h,v 1.1 1996-07-09 06:21:28 scrappy Exp $
+ * $Id: tuptable.h,v 1.1.1.1 1996-07-09 06:21:28 scrappy Exp $
  *
  * NOTES
  *    The tuple table interface is getting pretty ugly.

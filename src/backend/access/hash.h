@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: hash.h,v 1.1 1996-07-09 06:21:08 scrappy Exp $
+ * $Id: hash.h,v 1.1.1.1 1996-07-09 06:21:08 scrappy Exp $
  *
  * NOTES
  *	modeled after Margo Seltzer's hash implementation for unix. 

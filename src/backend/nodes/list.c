@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/list.c,v 1.1 1996-07-09 06:21:32 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/list.c,v 1.1.1.1 1996-07-09 06:21:32 scrappy Exp $
  *
  * NOTES
  *    XXX a few of the following functions are duplicated to handle

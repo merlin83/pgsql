@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: libpq.h,v 1.1 1996-07-09 06:21:30 scrappy Exp $
+ * $Id: libpq.h,v 1.1.1.1 1996-07-09 06:21:30 scrappy Exp $
  *
  * NOTES
  *    This file contains definitions for structures and

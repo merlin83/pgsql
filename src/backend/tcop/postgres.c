@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/postgres.c,v 1.1 1996-07-09 06:22:00 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/postgres.c,v 1.1.1.1 1996-07-09 06:22:00 scrappy Exp $
  *
  * NOTES
  *    this is the "main" module of the postgres backend and
@@ -1195,7 +1195,7 @@ PostgresMain(int argc, char *argv[])
      */
     if (IsUnderPostmaster == false) {
 	puts("\nPOSTGRES backend interactive interface");
-	puts("$Revision: 1.1 $ $Date: 1996-07-09 06:22:00 $");
+	puts("$Revision: 1.1.1.1 $ $Date: 1996-07-09 06:22:00 $");
     }
     
     /* ----------------

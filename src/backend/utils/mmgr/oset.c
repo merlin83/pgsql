@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/mmgr/Attic/oset.c,v 1.1 1996-07-09 06:22:09 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/mmgr/Attic/oset.c,v 1.1.1.1 1996-07-09 06:22:09 scrappy Exp $
  *
  * NOTE
  *    XXX This is a preliminary implementation which lacks fail-fast

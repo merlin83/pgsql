@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: pqcomm.h,v 1.1 1996-07-09 06:21:31 scrappy Exp $
+ * $Id: pqcomm.h,v 1.1.1.1 1996-07-09 06:21:31 scrappy Exp $
  *
  * NOTES
  *    Some of this should move to libpq.h

@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: xfunc.h,v 1.1 1996-07-09 06:21:35 scrappy Exp $
+ * $Id: xfunc.h,v 1.1.1.1 1996-07-09 06:21:35 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

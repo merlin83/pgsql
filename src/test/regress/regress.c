@@ -1,5 +1,5 @@
 /*
- * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/regress/regress.c,v 1.1 1996-07-09 06:22:24 scrappy Exp $
+ * $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/regress/regress.c,v 1.1.1.1 1996-07-09 06:22:24 scrappy Exp $
  */
 
 #include <float.h>		/* faked on sunos */

@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/Attic/rlstubs.c,v 1.1 1996-07-09 06:22:15 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/psql/Attic/rlstubs.c,v 1.1.1.1 1996-07-09 06:22:15 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

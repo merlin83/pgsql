@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeSeqscan.c,v 1.1 1996-07-09 06:21:27 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeSeqscan.c,v 1.1.1.1 1996-07-09 06:21:27 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

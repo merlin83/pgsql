@@ -1,5 +1,5 @@
 	!!
-	!! $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/sparc_solaris/Attic/tas.s,v 1.1 1996-07-09 06:21:45 scrappy Exp $
+	!! $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/sparc_solaris/Attic/tas.s,v 1.1.1.1 1996-07-09 06:21:45 scrappy Exp $
 	!!
 	!! this would be a piece of inlined assembler but it appears
 	!! to be easier to just write the assembler than to try to 

@@ -8,7 +8,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/Attic/Gen_fmgrtab.sh,v 1.1 1996-07-09 06:22:00 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/Attic/Gen_fmgrtab.sh,v 1.1.1.1 1996-07-09 06:22:00 scrappy Exp $
 #
 # NOTES
 #    Passes any -D options on to cpp prior to generating the list
@@ -81,7 +81,7 @@ cat > $HFILE <<FuNkYfMgRsTuFf
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: Gen_fmgrtab.sh,v 1.1 1996-07-09 06:22:00 scrappy Exp $
+ * $Id: Gen_fmgrtab.sh,v 1.1.1.1 1996-07-09 06:22:00 scrappy Exp $
  *
  * NOTES
  *	******************************
@@ -175,7 +175,7 @@ cat > $TABCFILE <<FuNkYfMgRtAbStUfF
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/Attic/Gen_fmgrtab.sh,v 1.1 1996-07-09 06:22:00 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/Attic/Gen_fmgrtab.sh,v 1.1.1.1 1996-07-09 06:22:00 scrappy Exp $
  *
  * NOTES
  *

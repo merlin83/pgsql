@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/index/Attic/istrat.c,v 1.1 1996-07-09 06:21:11 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/index/Attic/istrat.c,v 1.1.1.1 1996-07-09 06:21:11 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

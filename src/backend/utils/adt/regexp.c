@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/regexp.c,v 1.1 1996-07-09 06:22:05 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/regexp.c,v 1.1.1.1 1996-07-09 06:22:05 scrappy Exp $
  *
  *      Alistair Crooks added the code for the regex caching
  *	agc - cached the regular expressions used - there's a good chance

@@ -7,7 +7,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/bootstrap/Attic/Makefile.inc,v 1.1 1996-07-09 06:21:14 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/bootstrap/Attic/Makefile.inc,v 1.1.1.1 1996-07-09 06:21:14 scrappy Exp $
 #
 #
 # Another kinda weird Makefile.inc cause we need two

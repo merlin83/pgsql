@@ -12,7 +12,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: miscadmin.h,v 1.1 1996-07-09 06:21:28 scrappy Exp $
+ * $Id: miscadmin.h,v 1.1.1.1 1996-07-09 06:21:28 scrappy Exp $
  *
  * NOTES
  *    some of the information in this file will be moved to

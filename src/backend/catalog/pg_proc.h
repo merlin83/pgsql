@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: pg_proc.h,v 1.1 1996-07-09 06:21:18 scrappy Exp $
+ * $Id: pg_proc.h,v 1.1.1.1 1996-07-09 06:21:18 scrappy Exp $
  *
  * NOTES
  *    The script catalog/genbki.sh reads this file and generates .bki

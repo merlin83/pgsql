@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/init/Attic/magic.c,v 1.1 1996-07-09 06:22:09 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/init/Attic/magic.c,v 1.1.1.1 1996-07-09 06:22:09 scrappy Exp $
  *
  * NOTES
  *	XXX eventually, should be able to handle version identifiers

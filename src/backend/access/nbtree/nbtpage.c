@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/nbtpage.c,v 1.1 1996-07-09 06:21:12 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/nbtpage.c,v 1.1.1.1 1996-07-09 06:21:12 scrappy Exp $
  *
  *  NOTES
  *     Postgres btree pages look like ordinary relation pages.  The opaque

@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/sort/Attic/psort.c,v 1.1 1996-07-09 06:22:10 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/sort/Attic/psort.c,v 1.1.1.1 1996-07-09 06:22:10 scrappy Exp $
  *
  * NOTES
  *	Sorts the first relation into the second relation.  The sort may

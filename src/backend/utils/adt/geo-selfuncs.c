@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/Attic/geo-selfuncs.c,v 1.1 1996-07-09 06:22:04 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/Attic/geo-selfuncs.c,v 1.1.1.1 1996-07-09 06:22:04 scrappy Exp $
  *
  *	XXX These are totally bogus.
  *

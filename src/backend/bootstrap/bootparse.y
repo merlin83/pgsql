@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/bootstrap/bootparse.y,v 1.1 1996-07-09 06:21:14 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/bootstrap/bootparse.y,v 1.1.1.1 1996-07-09 06:21:14 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

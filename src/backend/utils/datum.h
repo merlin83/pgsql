@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: datum.h,v 1.1 1996-07-09 06:22:01 scrappy Exp $
+ * $Id: datum.h,v 1.1.1.1 1996-07-09 06:22:01 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

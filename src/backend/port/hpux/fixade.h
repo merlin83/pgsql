@@ -7,7 +7,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: fixade.h,v 1.1 1996-07-09 06:21:43 scrappy Exp $
+ * $Id: fixade.h,v 1.1.1.1 1996-07-09 06:21:43 scrappy Exp $
  *
  *   NOTES
  *	This must be included in EVERY source file.

@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: nodes.h,v 1.1 1996-07-09 06:21:33 scrappy Exp $
+ * $Id: nodes.h,v 1.1.1.1 1996-07-09 06:21:33 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

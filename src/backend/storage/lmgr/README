@@ -1,4 +1,4 @@
-$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/README,v 1.1 1996-07-09 06:21:55 scrappy Exp $
+$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/README,v 1.1.1.1 1996-07-09 06:21:55 scrappy Exp $
 
 This file is an attempt to save me (and future code maintainers) some
 time and a lot of headaches.  The existing lock manager code at the time

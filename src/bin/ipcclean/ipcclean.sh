@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/ipcclean/Attic/ipcclean.sh,v 1.1 1996-07-09 06:22:13 scrappy Exp $
+# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/ipcclean/Attic/ipcclean.sh,v 1.1.1.1 1996-07-09 06:22:13 scrappy Exp $
 #
 PATH=_fUnKy_IPCCLEANPATH_sTuFf_:$PATH
 export PATH

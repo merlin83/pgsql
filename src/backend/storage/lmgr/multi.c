@@ -12,7 +12,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/Attic/multi.c,v 1.1 1996-07-09 06:21:56 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/Attic/multi.c,v 1.1.1.1 1996-07-09 06:21:56 scrappy Exp $
  *
  * NOTES:
  *   (1) The lock.c module assumes that the caller here is doing

@@ -7,7 +7,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: strat.h,v 1.1 1996-07-09 06:21:09 scrappy Exp $
+ * $Id: strat.h,v 1.1.1.1 1996-07-09 06:21:09 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

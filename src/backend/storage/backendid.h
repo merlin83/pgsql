@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: backendid.h,v 1.1 1996-07-09 06:21:52 scrappy Exp $
+ * $Id: backendid.h,v 1.1.1.1 1996-07-09 06:21:52 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

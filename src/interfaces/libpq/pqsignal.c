@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/pqsignal.c,v 1.1 1996-07-09 06:22:17 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/pqsignal.c,v 1.1.1.1 1996-07-09 06:22:17 scrappy Exp $
  *
  * NOTES
  *	This shouldn't be in libpq, but the monitor and some other

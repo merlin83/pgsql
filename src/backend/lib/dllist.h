@@ -26,7 +26,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: dllist.h,v 1.1 1996-07-09 06:21:28 scrappy Exp $
+ * $Id: dllist.h,v 1.1.1.1 1996-07-09 06:21:28 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

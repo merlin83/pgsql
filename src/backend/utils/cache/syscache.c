@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/cache/syscache.c,v 1.1 1996-07-09 06:22:07 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/cache/syscache.c,v 1.1.1.1 1996-07-09 06:22:07 scrappy Exp $
  *
  * NOTES
  *    These routines allow the parser/planner/executor to perform

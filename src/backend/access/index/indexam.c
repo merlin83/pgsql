@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/index/indexam.c,v 1.1 1996-07-09 06:21:11 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/index/indexam.c,v 1.1.1.1 1996-07-09 06:21:11 scrappy Exp $
  *
  * INTERFACE ROUTINES
  *	index_open 	- open an index relation by relationId

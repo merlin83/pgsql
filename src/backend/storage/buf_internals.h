@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: buf_internals.h,v 1.1 1996-07-09 06:21:52 scrappy Exp $
+ * $Id: buf_internals.h,v 1.1.1.1 1996-07-09 06:21:52 scrappy Exp $
  *
  * NOTE
  *	If BUFFERPAGE0 is defined, then 0 will be used as a

@@ -55,7 +55,7 @@
 
 /*
  *	@(#)cdefs.h	8.1 (Berkeley) 6/2/93
- *	$Id: cdefs.h,v 1.1 1996-07-09 06:21:49 scrappy Exp $
+ *	$Id: cdefs.h,v 1.1.1.1 1996-07-09 06:21:49 scrappy Exp $
  */
 
 #ifndef	_CDEFS_H_

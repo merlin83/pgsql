@@ -10,7 +10,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: array.h,v 1.1 1996-07-09 06:22:01 scrappy Exp $
+ * $Id: array.h,v 1.1.1.1 1996-07-09 06:22:01 scrappy Exp $
  *
  * NOTES
  *    XXX the data array should be LONGALIGN'd -- notice that the array

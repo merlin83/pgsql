@@ -5,7 +5,7 @@
 #
 # Copyright (c) 1994-5, Regents of the University of California
 #
-#    $Id: postgres.mk.svr4,v 1.1 1996-07-09 06:22:20 scrappy Exp $
+#    $Id: postgres.mk.svr4,v 1.1.1.1 1996-07-09 06:22:20 scrappy Exp $
 #
 # NOTE
 #    This file has not been tested.	-ay 3/95

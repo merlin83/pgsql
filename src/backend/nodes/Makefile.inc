@@ -7,7 +7,7 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/Attic/Makefile.inc,v 1.1 1996-07-09 06:21:32 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/Attic/Makefile.inc,v 1.1.1.1 1996-07-09 06:21:32 scrappy Exp $
 #
 # NOTES
 #    Originally, the nodes module is a home-brew, C++ like inheritance

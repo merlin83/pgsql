@@ -6,7 +6,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: pqsignal.h,v 1.1 1996-07-09 06:21:31 scrappy Exp $
+ * $Id: pqsignal.h,v 1.1.1.1 1996-07-09 06:21:31 scrappy Exp $
  *
  * NOTES
  *    This shouldn't be in libpq, but the monitor and some other

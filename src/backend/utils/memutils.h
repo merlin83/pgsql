@@ -15,7 +15,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: memutils.h,v 1.1 1996-07-09 06:22:02 scrappy Exp $
+ * $Id: memutils.h,v 1.1.1.1 1996-07-09 06:22:02 scrappy Exp $
  *
  * NOTES
  *    some of the information in this file will be moved to
@@ -97,7 +97,7 @@ s...)
  *	XXX functional interface should not change.
  *
  * Identification:
- *	$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/Attic/memutils.h,v 1.1 1996-07-09 06:22:02 scrappy Exp $
+ *	$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/Attic/memutils.h,v 1.1.1.1 1996-07-09 06:22:02 scrappy Exp $
  */
 
 typedef struct OrderedElemData OrderedElemData;

@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/outfuncs.c,v 1.1 1996-07-09 06:21:33 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/outfuncs.c,v 1.1.1.1 1996-07-09 06:21:33 scrappy Exp $
  *
  * NOTES
  *    Every (plan) node in POSTGRES has an associated "out" routine which

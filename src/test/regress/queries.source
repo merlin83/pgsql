@@ -1,7 +1,7 @@
 --
 -- queries.source
 --
--- $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/regress/Attic/queries.source,v 1.1 1996-07-09 06:22:24 scrappy Exp $
+-- $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/test/regress/Attic/queries.source,v 1.1.1.1 1996-07-09 06:22:24 scrappy Exp $
 --
 -- The comments that contain sequences of UNIX commands generate the 
 -- desired output for the POSTQUEL statement(s).

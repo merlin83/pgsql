@@ -5,7 +5,7 @@
  *
  *
  * IDENTIFICATION
- *    $Id: nbtsort.c,v 1.1 1996-07-09 06:21:12 scrappy Exp $
+ *    $Id: nbtsort.c,v 1.1.1.1 1996-07-09 06:21:12 scrappy Exp $
  *
  * NOTES
  *

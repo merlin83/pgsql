@@ -7,7 +7,7 @@
  *
  * Copyright (c) 1994, Regents of the University of California
  *
- * $Id: indexing.h,v 1.1 1996-07-09 06:21:15 scrappy Exp $
+ * $Id: indexing.h,v 1.1.1.1 1996-07-09 06:21:15 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */

@@ -1,4 +1,4 @@
-$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/README,v 1.1 1996-07-09 06:21:12 scrappy Exp $
+$Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/access/nbtree/README,v 1.1.1.1 1996-07-09 06:21:12 scrappy Exp $
 
 This directory contains a correct implementation of Lehman and Yao's
 btree management algorithm that supports concurrent access for Postgres.
