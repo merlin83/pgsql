@@ -7,7 +7,7 @@
  * Portions Copyright (c) 1994, Regents of the University of California
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/async.c,v 1.69 2000-10-02 19:42:45 petere Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/async.c,v 1.70 2000-10-03 03:11:13 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -496,7 +496,6 @@ AtCommit_Notify()
 				 */
 				if (kill(listenerPID, SIGUSR2) < 0)
 				{
-
 					/*
 					 * Get rid of pg_listener entry if it refers to a PID
 					 * that no longer exists.  Presumably, that backend
