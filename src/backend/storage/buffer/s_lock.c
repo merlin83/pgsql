@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/buffer/Attic/s_lock.c,v 1.5 1998-05-04 15:44:41 scrappy Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/buffer/Attic/s_lock.c,v 1.6 1998-05-04 16:58:38 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
