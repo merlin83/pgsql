@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/index.c,v 1.3 1996-08-26 06:29:32 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/index.c,v 1.4 1996-08-27 22:16:32 scrappy Exp $
  *
  *
  * INTERFACE ROUTINES
@@ -71,8 +71,6 @@
 #include "optimizer/prep.h"
 
 #include "parser/catalog_utils.h"
-
-#include "machine.h"
 
 /*
  * macros used in guessing how many tuples are on a page.
