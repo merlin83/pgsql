@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/copy.c,v 1.113 2000-06-14 18:17:25 petere Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/copy.c,v 1.114 2000-06-15 03:32:07 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -21,6 +21,7 @@
 #include "access/heapam.h"
 #include "catalog/catname.h"
 #include "catalog/index.h"
+#include "catalog/pg_index.h"
 #include "catalog/pg_shadow.h"
 #include "catalog/pg_type.h"
 #include "commands/copy.h"
