@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-connect.c,v 1.83 1998-09-20 04:51:10 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-connect.c,v 1.84 1998-10-01 01:40:19 tgl Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -822,8 +822,8 @@ PQsetenv(PGconn *conn)
 				sprintf(envbuf, "%s=%s", envname, encoding);
 				putenv(envbuf);
 			}
-			PQclear(rtn);
 		}
+		PQclear(rtn);
 		if (!encoding)
 		{						/* this should not happen */
 			sprintf(envbuf, "%s=%s", envname, pg_encoding_to_char(MULTIBYTE));
