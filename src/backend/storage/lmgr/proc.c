@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/proc.c,v 1.101 2001-05-25 15:34:50 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/lmgr/proc.c,v 1.102 2001-05-25 15:45:33 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -261,7 +261,6 @@ InitProcess(void)
 	MyProc->databaseId = MyDatabaseId;
 	MyProc->xid = InvalidTransactionId;
 	MyProc->xmin = InvalidTransactionId;
-	MyProc->startOid = ShmemVariableCache->nextOid;
 	MyProc->waitLock = NULL;
 	MyProc->waitHolder = NULL;
 	SHMQueueInit(&(MyProc->procHolders));
