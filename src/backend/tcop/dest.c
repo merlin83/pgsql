@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/dest.c,v 1.5 1997-01-10 20:19:00 momjian Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/dest.c,v 1.6 1997-08-12 22:54:19 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -188,7 +188,7 @@ NullCommand(CommandDest dest)
 	}
 	pq_flush();
 	PQcleanNotify();	/* garbage collect */
-	(void) MemoryContextSwitchTo(orig);
+	MemoryContextSwitchTo(orig);
 #endif
 	/* ----------------
 	 *	tell the fe that the last of the queries has finished
