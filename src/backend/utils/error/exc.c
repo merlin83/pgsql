@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/Attic/exc.c,v 1.31 2000-10-03 03:11:22 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/Attic/exc.c,v 1.32 2000-10-28 23:53:00 petere Exp $
  *
  * NOTE
  *	  XXX this code needs improvement--check for state violations and
@@ -203,10 +203,6 @@ ExcRaise(Exception *excP,
 
 		ExcCurFrameP = efp->link;
 
-#if defined (JMP_BUF)
-		longjmp(efp->context, 1);
-#else
 		siglongjmp(efp->context, 1);
-#endif
 	}
 }
