@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeMergejoin.c,v 1.3 1996-11-06 06:47:45 scrappy Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeMergejoin.c,v 1.4 1996-11-08 00:45:59 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -80,6 +80,7 @@
 #include "executor/executor.h"
 #include "executor/execdefs.h"
 #include "executor/nodeMergejoin.h"
+#include "executor/execdebug.h"
 #include "utils/lsyscache.h"
 
 /* ----------------------------------------------------------------
