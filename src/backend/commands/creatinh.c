@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/Attic/creatinh.c,v 1.12 1997-08-19 04:43:30 vadim Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/Attic/creatinh.c,v 1.13 1997-08-21 04:05:22 vadim Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -276,7 +276,7 @@ MergeAttributes(List *schema, List *supers)
 	    AttributeTupleForm	attribute = tupleDesc->attrs[attrno];
 	    char *attributeName;
 	    char *attributeType;
-	    AttrConstr  constraints;
+	    TupleConstr  constraints;
 	    HeapTuple	tuple;
 	    ColumnDef	*def;
 	    TypeName	*typename;
