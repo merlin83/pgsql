@@ -7,11 +7,10 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/ipc/ipci.c,v 1.29 1999-07-16 04:59:44 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/ipc/ipci.c,v 1.30 1999-07-17 20:17:44 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
-#include <string.h>
 #include <sys/types.h>
 
 #include "postgres.h"

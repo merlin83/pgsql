@@ -7,16 +7,13 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/rewrite/rewriteRemove.c,v 1.27 1999-07-16 04:59:41 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/rewrite/rewriteRemove.c,v 1.28 1999-07-17 20:17:39 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 
-#include <string.h>
 
 #include "postgres.h"
-
-
 
 #include "access/heapam.h"
 #include "catalog/catname.h"

@@ -7,15 +7,12 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/arrayfuncs.c,v 1.46 1999-07-16 05:00:00 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/arrayfuncs.c,v 1.47 1999-07-17 20:17:53 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 
 #include <ctype.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdarg.h>
 
 #include "postgres.h"
 

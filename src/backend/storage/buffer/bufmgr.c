@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/buffer/bufmgr.c,v 1.60 1999-07-16 04:59:41 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/buffer/bufmgr.c,v 1.61 1999-07-17 20:17:40 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -42,8 +42,6 @@
  */
 #include <sys/types.h>
 #include <sys/file.h>
-#include <stdio.h>
-#include <string.h>
 #include <math.h>
 #include <signal.h>
 

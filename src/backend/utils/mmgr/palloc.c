@@ -7,15 +7,13 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/mmgr/Attic/palloc.c,v 1.13 1999-07-15 15:20:38 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/mmgr/Attic/palloc.c,v 1.14 1999-07-17 20:18:15 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 
-#include <string.h>
 
 #include "postgres.h"
-
 
 #include "nodes/memnodes.h"
 

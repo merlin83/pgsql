@@ -6,12 +6,11 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/copy.c,v 1.84 1999-07-16 04:58:39 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/commands/copy.c,v 1.85 1999-07-17 20:16:51 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 
-#include <string.h>
 #include <unistd.h>
 #include <sys/stat.h>
 

@@ -7,13 +7,11 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/smgr/md.c,v 1.50 1999-07-16 04:59:49 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/smgr/md.c,v 1.51 1999-07-17 20:17:48 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include <unistd.h>
-#include <stdio.h>
-#include <string.h>
 #include <fcntl.h>
 #include <sys/file.h>
 

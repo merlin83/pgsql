@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeUnique.c,v 1.23 1999-07-16 04:58:53 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeUnique.c,v 1.24 1999-07-17 20:16:59 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -22,7 +22,6 @@
  *		sorted order.
  *
  */
-#include <string.h>
 
 #include "postgres.h"
 
