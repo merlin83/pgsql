@@ -1,13 +1,13 @@
 #-------------------------------------------------------------------------
 #
 # Makefile
-#    Makefile for src/bin (utility programs)
+#    Makefile for src/bin (client programs)
 #
 # Copyright (c) 1994, Regents of the University of California
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/Makefile,v 1.23 2000-01-19 02:58:59 petere Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/Makefile,v 1.24 2000-01-19 20:08:23 petere Exp $
 #
 #-------------------------------------------------------------------------
 
