@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/qnx/Attic/ipc.h,v 1.1 1999-12-16 01:25:06 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/port/qnx4/Attic/ipc.h,v 1.1 1999-12-16 16:52:52 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
