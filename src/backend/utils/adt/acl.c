@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/acl.c,v 1.10 1997-07-24 20:15:36 momjian Exp $
+ *    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/adt/acl.c,v 1.11 1997-08-03 02:36:41 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -85,7 +85,7 @@ char *
 aclparse(char *s, AclItem *aip, unsigned *modechg)
 {
     HeapTuple htp;
-    char name[NAMEDATALEN+1];
+    char name[NAMEDATALEN];
     
     Assert(s && aip && modechg);
     
