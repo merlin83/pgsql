@@ -7,14 +7,13 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/smgr/smgrtype.c,v 1.13 1999-07-15 15:19:56 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/smgr/smgrtype.c,v 1.14 1999-07-15 22:39:55 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include <string.h>
 #include "postgres.h"
 
-#include "utils/builtins.h"		/* where the declarations go */
 #include "storage/smgr.h"
 
 typedef struct smgrid
