@@ -7,19 +7,20 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/Makefile,v 1.1 1997-08-16 20:56:28 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/Makefile,v 1.2 1997-09-16 18:47:16 momjian Exp $
 #
 #-------------------------------------------------------------------------
 
-#include ../Makefile.global
+SRCDIR= ..
+include $(SRCDIR)/Makefile.global
 
 .DEFAULT all:
 	$(MAKE) -C libpq $@
-
 ifeq ($(HAVE_Cplusplus), true)
 	$(MAKE) -C libpq++ $@
+else
+	echo $(HAVE_Cplusplus): No C++
 endif
-
 ifeq ($(USE_TCL), true)
 	$(MAKE) -C libpgtcl $@
 endif
