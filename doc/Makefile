@@ -8,11 +8,11 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/Makefile,v 1.5 1998-03-15 07:37:51 scrappy Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/doc/Makefile,v 1.6 1998-04-06 01:35:16 momjian Exp $
 #
 #----------------------------------------------------------------------------
 
-PGDOCS= /usr/local/cdrom/docs
+PGDOCS= unpacked
 SRCDIR= ../src
 
 TAR= tar
