@@ -13,7 +13,7 @@ import java.sql.*;
  * User: alexei
  * Date: 17-Dec-2003
  * Time: 11:01:44
- * @version $Id: OID74Test.java,v 1.2 2003-12-17 15:45:05 davec Exp $
+ * @version $Id: OID74Test.java,v 1.2.2.1 2003-12-17 15:48:40 davec Exp $
  */
 public class OID74Test  extends TestCase
 {
