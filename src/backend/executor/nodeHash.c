@@ -6,8 +6,7 @@
  * Copyright (c) 1994, Regents of the University of California
  *
  *
- * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeHash.c,v 1.25 1998-12-14 05:18:50 scrappy Exp $
+ *  $Id: nodeHash.c,v 1.26 1998-12-14 06:50:21 scrappy Exp $
  *
  *-------------------------------------------------------------------------
  */
