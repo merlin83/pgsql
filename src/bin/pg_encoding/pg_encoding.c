@@ -7,11 +7,12 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/pg_encoding/Attic/pg_encoding.c,v 1.7 2000-02-16 13:22:00 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/pg_encoding/Attic/pg_encoding.c,v 1.8 2000-02-19 04:59:30 ishii Exp $
  *
  *-------------------------------------------------------------------------
  */
 #include "postgres.h"
+#include "miscadmin.h"
 #include "mb/pg_wchar.h"
 
 static void usage(void);
