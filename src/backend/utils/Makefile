@@ -4,9 +4,12 @@
 #    Makefile for utils
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/Makefile,v 1.2 1996-11-02 02:03:50 bryanh Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/Makefile,v 1.3 1996-11-03 09:28:31 bryanh Exp $
 #
 #-------------------------------------------------------------------------
+
+SRCDIR = ../..
+include ../../Makefile.global
 
 INCLUDE_OPT = -I.. \
               -I../include \
