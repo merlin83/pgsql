@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/page/itemptr.c,v 1.5 1999-02-13 23:18:33 momjian Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/storage/page/itemptr.c,v 1.6 1999-05-25 16:11:27 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -19,7 +19,7 @@
 #include "storage/bufpage.h"
 
 /*
- * ItemPointerEquals 
+ * ItemPointerEquals
  *	Returns true if both item pointers point to the same item,
  *	 otherwise returns false.
  *
