@@ -7,12 +7,11 @@
 #
 #
 # IDENTIFICATION
-#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/Makefile,v 1.6 1996-11-13 10:35:20 bryanh Exp $
+#    $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/bin/Makefile,v 1.7 1997-04-26 05:04:21 scrappy Exp $
 #
 #-------------------------------------------------------------------------
 
-SRCDIR=..
-include ../Makefile.global
+#include ../Makefile.global
 
 .DEFAULT all:
 #
