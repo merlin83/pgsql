@@ -9,7 +9,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/path/tidpath.c,v 1.17 2003-08-08 21:41:47 momjian Exp $
+ *	  $PostgreSQL: pgsql/src/backend/optimizer/path/tidpath.c,v 1.18 2003/11/29 19:51:50 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */

@@ -9,7 +9,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/list.c,v 1.54 2003-08-08 21:41:44 momjian Exp $
+ *	  $PostgreSQL: pgsql/src/backend/nodes/list.c,v 1.55 2003/11/29 19:51:49 pgsql Exp $
  *
  * NOTES
  *	  XXX a few of the following functions are duplicated to handle

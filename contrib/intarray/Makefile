@@ -1,4 +1,4 @@
-# $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/contrib/intarray/Makefile,v 1.9 2003-06-11 18:44:14 momjian Exp $
+# $PostgreSQL: pgsql/contrib/intarray/Makefile,v 1.10 2003/11/29 19:51:35 pgsql Exp $
 
 subdir = contrib/intarray
 top_builddir = ../..

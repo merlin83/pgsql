@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/fmgr/fmgr.c,v 1.76 2003-09-25 06:58:05 petere Exp $
+ *	  $PostgreSQL: pgsql/src/backend/utils/fmgr/fmgr.c,v 1.77 2003/11/29 19:52:01 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */

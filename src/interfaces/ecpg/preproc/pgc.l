@@ -12,7 +12,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/ecpg/preproc/pgc.l,v 1.122 2003-10-31 14:10:41 meskes Exp $
+ *	  $PostgreSQL: pgsql/src/interfaces/ecpg/preproc/pgc.l,v 1.123 2003/11/29 19:52:08 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */

@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-protocol3.c,v 1.9 2003-08-27 00:33:34 petere Exp $
+ *	  $PostgreSQL: pgsql/src/interfaces/libpq/fe-protocol3.c,v 1.10 2003/11/29 19:52:12 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */

@@ -10,7 +10,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/tcop/utility.c,v 1.208 2003-10-02 06:34:04 petere Exp $
+ *	  $PostgreSQL: pgsql/src/backend/tcop/utility.c,v 1.209 2003/11/29 19:51:57 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */

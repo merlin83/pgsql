@@ -37,7 +37,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/error/elog.c,v 1.125 2003-10-17 16:49:03 tgl Exp $
+ *	  $PostgreSQL: pgsql/src/backend/utils/error/elog.c,v 1.126 2003/11/29 19:52:01 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */

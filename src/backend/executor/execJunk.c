@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/execJunk.c,v 1.36 2003-08-11 20:46:46 tgl Exp $
+ *	  $PostgreSQL: pgsql/src/backend/executor/execJunk.c,v 1.37 2003/11/29 19:51:48 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */

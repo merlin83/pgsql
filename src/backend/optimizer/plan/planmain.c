@@ -14,7 +14,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/optimizer/plan/planmain.c,v 1.78 2003-08-04 02:40:01 momjian Exp $
+ *	  $PostgreSQL: pgsql/src/backend/optimizer/plan/planmain.c,v 1.79 2003/11/29 19:51:50 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */

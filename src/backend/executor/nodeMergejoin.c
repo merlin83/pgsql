@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/executor/nodeMergejoin.c,v 1.62 2003-09-25 06:57:59 petere Exp $
+ *	  $PostgreSQL: pgsql/src/backend/executor/nodeMergejoin.c,v 1.63 2003/11/29 19:51:48 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */

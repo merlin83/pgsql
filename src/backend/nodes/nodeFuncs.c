@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/nodes/nodeFuncs.c,v 1.23 2003-08-04 02:39:59 momjian Exp $
+ *	  $PostgreSQL: pgsql/src/backend/nodes/nodeFuncs.c,v 1.24 2003/11/29 19:51:49 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */

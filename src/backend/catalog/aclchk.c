@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/catalog/aclchk.c,v 1.94 2003-11-21 22:32:48 tgl Exp $
+ *	  $PostgreSQL: pgsql/src/backend/catalog/aclchk.c,v 1.95 2003/11/29 19:51:42 pgsql Exp $
  *
  * NOTES
  *	  See acl.h.

@@ -7,7 +7,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/backend/utils/init/Attic/findbe.c,v 1.39 2003-11-12 00:04:10 momjian Exp $
+ *	  $PostgreSQL: pgsql/src/backend/utils/init/findbe.c,v 1.40 2003/11/29 19:52:01 pgsql Exp $
  *
  *-------------------------------------------------------------------------
  */
