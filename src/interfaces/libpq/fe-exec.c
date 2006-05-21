@@ -8,7 +8,7 @@
  *
  *
  * IDENTIFICATION
- *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-exec.c,v 1.153.2.4 2004-03-14 22:01:01 tgl Exp $
+ *	  $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/libpq/fe-exec.c,v 1.153.2.5 2006-05-21 19:57:07 momjian Exp $
  *
  *-------------------------------------------------------------------------
  */
@@ -2329,7 +2329,7 @@ PQescapeBytea(const unsigned char *bintext, size_t binlen, size_t *bytealen)
 		}
 		else if (*vp == '\'')
 		{
-			rp[0] = '\\';
+			rp[0] = '\'';
 			rp[1] = '\'';
 			rp += 2;
 		}
