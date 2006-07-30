@@ -1,3 +1,5 @@
+/* $Header: /home/rubik/work/pgcvs/CVSROOT/pgsql/src/interfaces/ecpg/preproc/variable.c,v 1.40 2006-07-30 10:24:10 meskes Exp $ */
+
 #include "postgres_fe.h"
 
 #include "extern.h"
