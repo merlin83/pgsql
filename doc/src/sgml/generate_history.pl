@@ -9,7 +9,7 @@
 # in a standalone build of the release notes.  To make sure this is done
 # everywhere, we have to fold in the sub-files of the release notes.
 #
-# $PostgreSQL: pgsql/doc/src/sgml/generate_history.pl,v 1.1 2009/05/02 20:17:19 tgl Exp $
+# $PostgreSQL: pgsql/doc/src/sgml/generate_history.pl,v 1.1.10.1 2009/05/02 20:18:21 tgl Exp $
 
 use strict;
 
@@ -19,7 +19,7 @@ my($infile) = shift;
 defined($infile) || die "$0: missing required argument: inputfile\n";
 
 # Emit DOCTYPE header so that the output is a self-contained SGML document
-print "<!DOCTYPE appendix PUBLIC \"-//OASIS//DTD DocBook V4.2//EN\">\n";
+print "<!DOCTYPE appendix PUBLIC \"-//OASIS//DTD DocBook V3.1//EN\">\n";
 
 process_file($infile);
 
