@@ -8,10 +8,30 @@ SET client_min_messages = warning;
 \set ECHO all
 RESET client_min_messages;
 
-select query_to_xml('select 1 as x',true,false,'');
+select xslt_process( 
+'<table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-select xslt_process( query_to_xml('select x from generate_series(1,5) as 
-x',true,false,'')::text,
+<row>
+  <x>1</x>
+</row>
+
+<row>
+  <x>2</x>
+</row>
+
+<row>
+  <x>3</x>
+</row>
+
+<row>
+  <x>4</x>
+</row>
+
+<row>
+  <x>5</x>
+</row>
+
+</table>'::text,
 $$<xsl:stylesheet version="1.0"
                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="xml" indent="yes" />
@@ -27,14 +47,6 @@ $$<xsl:stylesheet version="1.0"
 </xsl:stylesheet>
 $$::text);
 
-CREATE TABLE xpath_test (id integer NOT NULL, t xml);
-INSERT INTO xpath_test VALUES (1, '<doc><int>1</int></doc>');
-SELECT * FROM xpath_table('id', 't', 'xpath_test', '/doc/int', 'true')
-as t(id int4);
-SELECT * FROM xpath_table('id', 't', 'xpath_test', '/doc/int', 'true')
-as t(id int4, doc int4);
-
-DROP TABLE xpath_test;
 CREATE TABLE xpath_test (id integer NOT NULL, t text);
 INSERT INTO xpath_test VALUES (1, '<doc><int>1</int></doc>');
 SELECT * FROM xpath_table('id', 't', 'xpath_test', '/doc/int', 'true')
@@ -42,7 +54,7 @@ as t(id int4);
 SELECT * FROM xpath_table('id', 't', 'xpath_test', '/doc/int', 'true')
 as t(id int4, doc int4);
 
-create table articles (article_id integer, article_xml xml, date_entered date);
+create table articles (article_id integer, article_xml text, date_entered date);
 insert into articles (article_id, article_xml, date_entered)
 values (2, '<article><author>test</author><pages>37</pages></article>', now());
 SELECT * FROM
@@ -61,7 +73,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
          <xsl:apply-templates select="@*|node()"/>
       </xsl:copy>
    </xsl:template>
-</xsl:stylesheet>$$)::xml;
+</xsl:stylesheet>$$);
 
 select xslt_process('<aaa/>',$$<xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -70,13 +82,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
          <xsl:apply-templates select="@*|node()"/>
       </xsl:copy>
    </xsl:template>
-</xsl:stylesheet>$$)::xml;
+</xsl:stylesheet>$$);
 
-create table t1 (id integer, xml_data xml);
+create table t1 (id integer, xml_data text);
 insert into t1 (id, xml_data)
 values
 (1, '<attributes><attribute name="attr_1">Some
 Value</attribute></attributes>');
-
-create index idx_xpath on t1 ( xpath_string
-('/attributes/attribute[@name="attr_1"]/text()', xml_data::text));
+select xpath_string('/attributes/attribute[@name="attr_1"]/text()', xml_data)
+from t1;
